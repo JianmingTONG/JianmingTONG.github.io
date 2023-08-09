@@ -97,6 +97,7 @@
                     <heading>News</heading>  
                     <div style="height:500px;overflow-y:auto">
                     <p></p><ul>      
+                    <li> [Aug. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors</papertitle> is accepted to the IEEE SENSORS conference (<a href="https://2023.ieee-sensorsconference.org/"><strong>SENSORS'23</strong></a>).</li>
                     <li> [Jul. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>On Continuing DNN Accelerator Architecture Scaling Using Tightly-coupled Compute-on-Memory 3D ICs</papertitle> is accepted to the IEEE Transactions on Very Large Scale Integration Systems (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=92"><strong>TVLSI'23</strong></a>).</li>
                     <li> [Jul. 2023] <b style="color:#FF2400;">[Award]</b> I win 2023 <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2023-north-america"><strong>Qualcomm Innovation Fellowship</strong></a>, thank you Qualcomm!</li>
                     <li> [Jul. 2023] <b style="color:#9673A6;">[Service]</b> I serve as <strong>AEC</strong> for <a href="https://www.asplos-conference.org/asplos2024/"><strong>ASPLOS'24</strong></a>.</li>
@@ -129,6 +130,45 @@
                <table width="100%" align="right" border="0" cellspacing="0" cellpadding="10">
                   <tbody>
                      <heading>Publications (* Equal Contribution)</heading>
+
+                     <tr>
+                        <td width="60%" valign="middle">
+                           <div class="title">
+                              <b>SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors</b>
+                           </div>
+                           <div class="authors">
+                              <a href="https://www.sudarshan-sh.com/"> Sudarshan Sharma</a>,
+                              <a href="https://udaykamal20.github.io/"> Uday Kamal</a>,
+                              <b>Jianming Tong</b>,
+                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
+                              and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
+                           </div>
+                           <div class="venue">
+                              <i>IEEE SENSORS conference(<b style="color:#ff6600;">SENSORS</b>), Aug 2023.</i>
+                           </div>
+                           <!-- <div class="link"> -->
+                              <!-- <b><a onclick="displayid('abs10');">[abstract]</a></b> -->
+                              <!-- <b><a href="https://assets.researchsquare.com/files/rs-2910088/v1_covered_0e6c94bd-1499-4b2c-b414-902c232b490c.pdf?c=1683777877">[paper]</a></b> -->
+                              <!-- <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b> -->
+                              <!-- <b><a href="publications/PAF_FHE_poster.pdf">[poster]</a></b> -->
+                              <!-- <b><a onclick="displayid('bib8');">[bibtex]</a></b> -->
+                              <!-- <div id="abs10" style="display:none;">
+                                 This work identifies the architectural and design scaling limits of 2D flexible interconnect DNN accelerators and addresses them with 3D ICs. We demonstrate how scaling up a baseline 2D accelerator in the X/Y dimension fails and how vertical stacking effectively overcomes the failure. We designed multi-tier accelerators that are 1.67X faster than the 2D design. Using our 3D architecture and circuit co-design methodology, we improve throughput, energy-efficiency, and area-efficiency by up to 5X, 1.2X, and 3.9X, respectively, over 2D counterparts. The IR-drop in our 3D designs is within 10.7% of VDD, and the temperature variation is within 12˚C.
+                              </div> -->
+                              <!-- <div id="bib8" style="display:none;">
+                                 @misc {PPR:PPR658940,
+                                    Title = {PAF-FHE: Low-Cost Accurate Non-Polynomial Operator Polynomial Approximation in Fully Homomorphic Encryption Based ML Inference},
+                                    Author = {Dang, Jingtian and Tong, Jianming and Golder, Anupam and Raychowdhury, Arijit and Hao, Cong and Krishna, Tushar},
+                                    DOI = {10.21203/rs.3.rs-2910088/v1},
+                                    Abstract = {Machine learning (ML) is getting more pervasive. Wide adoption of ML in healthcare, facial recognition, and blockchain involves private and sensitive data. One of the most promising candidates for inference on encrypted data, termed Fully Homomorphic Encryp-tion (FHE), preserves the privacy of both data and the ML model. However, it slows down plaintext inference by six magnitudes, with a root cause of replacing non-polynomial operators with latency-prohibitive 27-degree Polynomial Approximated Function (PAF). While prior research has investigated low-degree PAFs, naive stochastic gradient descent (SGD) training fails to converge on PAFs with degrees higher than 5, leading to limited accuracy compared to the state-of-the-art 27-degree PAF. Therefore, we propose four training techniques to enable convergence in the post-approximation model using PAFs with an arbitrary degree, including (1) Dynamic Scaling (DS) and Static Scaling (SS) to enable minimal approximation error during approximation, (2) Coefficient Tuning (CT) to obtain a good initial coefficient value for each PAF, (3) Progressive Approximation (PA) to simply the two-variable regression optimization problem into single-variable for fast 1 and easy convergence, and (4) Alternate Training (AT) to retraining the post-replacement PAFs and other linear layers in a decoupled divide-and-conquer manner. A combination of DS/SS, CT, PA, and AT enables the exploration of accuracy-latency space for FHE-domain ReLU replacement. Leveraging the proposed techniques, we propose a systematic approach (PAF-FHE) to enable low-degree PAF to demonstrate the same accuracy as SotA high-degree PAFs. We evaluated PAFs with various degrees on different models and variant datasets, and PAF-FHE consistently enables low-degree PAF to achieve higher accuracy than SotA PAFs. Specifically, for ResNet-18 under the ImageNet-1k dataset, our spotted optimal 12-degree PAF reduces 56% latency compared to the SotA 27-degree PAF with the same post-replacement accuracy (69.4%). While as for VGG-19 under the CiFar-10 dataset, optimal 12-degree PAF achieves even 0.84% higher accuracy with 72% latency saving. Our code is open-sourced at: https://github.com/TorchFHE/PAF-FHE},
+                                    Publisher = {Research Square},
+                                    Year = {2023},
+                                    URL = {https://doi.org/10.21203/rs.3.rs-2910088/v1},
+                                 }
+                              </div> -->
+                           <!-- </div> -->
+                        </td>
+                     </tr>
                      <tr>
                         <td width="60%" valign="middle">
                            <div class="title">
@@ -138,7 +178,7 @@
                               <a href="https://www.linkedin.com/in/gauthaman-murali-4110a732/">Gauthaman Murali</a>,
                               <a href="https://www.linkedin.com/in/adityaiyer99/">Aditya Iyer</a>,
                               <a href="https://www.linkedin.com/in/lingjunzhu/?locale=en_US">Lingjun Zhu</a>,
-                              <b>Jianming Tong*</b>,
+                              <b>Jianming Tong</b>,
                               <a href="https://www.linkedin.com/in/fr-munoz-mrtinez/?originalSubdomain=es">Francisco Munoz Martinez</a>,
                               <a href="https://www.linkedin.com/in/srivatsa-rangachar-srinivasa-8b0b4a130/">Srivatsa Rangachar Srinivasa</a>,
                               <a href="https://ieeexplore.ieee.org/author/37268291400">Tanay Karnik</a>,
@@ -1026,7 +1066,7 @@
                      <tr>
                         <!-- <heading>Life</heading> -->
                         <td width="100%" valign="right">
-                           <b>Last Updated: Jul 14. 2023</b>
+                           <b>Last Updated: Jul 20. 2023</b>
                         </td>
                      </tr>
                   </tbody>
