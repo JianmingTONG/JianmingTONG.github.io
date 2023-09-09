@@ -54,10 +54,10 @@
                            <!-- <td width="46%" valign="left"> -->
                               <div class="research_interests">
                                  Research Interest: <br>
+                                 - Privacy-Preserving Computing (Homorphic Encryption) <br>
+                                 - Deep Learning Compilation and Accelerator <br>
                                  - Hardware-software co-design (FPGA; VLSI Design) <br>
-                                 - Deep Learning Compiler and Accelerator <br>
                                  - On-chip Network <br>
-                                 - Homomorphic Encryption Acceleration <br>
                               </div>
                            <!-- </td> -->
                            <!-- <p>I received my bachelor degree at
@@ -131,7 +131,43 @@
                <table width="100%" align="right" border="0" cellspacing="0" cellpadding="10">
                   <tbody>
                      <heading>Publications (* Equal Contribution)</heading>
-
+                     <tr>
+                        <td width="60%" valign="middle">
+                           <div class="title">
+                              <b>Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications</b>
+                           </div>
+                           <div class="authors">
+                              <a href="https://paymanbehnam.com/">Payman Behnam*</a>,
+                              <b>Jianming Tong*</b>,
+                              <a href="https://www.cc.gatech.edu/~akhare39/">Alind Khare</a>,
+                              <a href="https://www.linkedin.com/in/yangyu-chen/">Yangyu Chen</a>,
+                              <a href="https://www.linkedin.com/in/yue-pan-061439192/">Yue Pan</a>,
+                              <a href="https://www.linkedin.com/in/abhimanyu-bambhaniya/">Abhimanyu Bambhaniya</a>,
+                              <a>Pranav Gadikar</a>,
+                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>, and
+                              <a href="https://www.cc.gatech.edu/~atumanov/">Alexey Tumanov</a>
+                           </div>
+                           <div class="venue">
+                              <i> (<b style="color:#ff6600;">IEEE micro</b>), Sep 2023.</i>
+                           </div>
+                           <!-- <div class="insight">
+                              <i> <b> Insight 1: </b> Weights-sharing neural network enables a dynamic latency-accuracy serving.</i> <br>
+                              <i> <b> Insight 2: </b> Putting common weights on-chip (Subgraph Stationary) could save off-chip data access latency and thus push model towards computattion-bound.</i>
+                           </div> -->
+                           <div class="link">
+                              <b><a onclick="displayid('abs7');">[abstract]</a></b>
+                              <b><a href="https://arxiv.org/abs/2306.17266">[paper]</a></b>
+                              <b><a onclick="displayid('bib7');">[bibtex]</a></b>
+                              <div id="abs7" style="display:none;">
+                                 A growing number of applications depend on Machine Learning (ML) functionality and benefits from both higher quality ML predictions and better timeliness (latency) at the same time. A growing body of research in computer architecture, ML, and systems software literature focuses on reaching better latency/accuracy tradeoffs for ML models. Efforts include compression, quantization, pruning, early-exit models, mixed DNN precision, as well as ML inference accelerator designs that minimize latency and energy, while preserving delivered accuracy. All of them, however, yield improvements for a single static point in the latency/accuracy tradeoff space. We make a case for applications that operate in dynamically changing deployment scenarios, where no single static point is optimal. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that uses (activates) different SubNets within this weight-shared construct. This creates an opportunity to exploit the inherent temporal locality with our proposed SubGraph Stationary (SGS) optimization. We take a hardware-software co-design approach with a real implementation of SGS in SushiAccel and the implementation of a software scheduler SushiSched controlling which SubNets to serve and what to cache in real-time. Combined, they are vertically integrated into SUSHI---an inference serving stack. For the stream of queries, SUSHI yields up to 25% improvement in latency, 0.98% increase in served accuracy. SUSHI can achieve up to 78.7% off-chip energy savings.
+                              </div>
+                              <div id="bib7" style="display:none;">
+                                 Stay in tune
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     
                      <tr>
                         <td width="60%" valign="middle">
                            <div class="title">
@@ -1079,7 +1115,7 @@
                      <tr>
                         <!-- <heading>Life</heading> -->
                         <td width="100%" valign="right">
-                           <b>Last Updated: Jul 20. 2023</b>
+                           <b>Last Updated: Sep 8. 2023</b>
                         </td>
                      </tr>
                   </tbody>
