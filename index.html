@@ -97,6 +97,7 @@
                     <heading>News</heading>  
                     <div style="height:500px;overflow-y:auto">
                     <p></p><ul>      
+                    <li> [Sep. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications</papertitle> is accepted to the Journal (<a href="https://2023.ieee-sensorsconference.org/"><strong>IEEE micro</strong></a>).</li>
                     <li> [Sep 2023] <b style="color:#9673A6;">[Career]</b> I join MIT as a visiting Ph.D. in CSAIL.</li>
                     <li> [Aug. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors</papertitle> is accepted to the IEEE SENSORS conference (<a href="https://2023.ieee-sensorsconference.org/"><strong>SENSORS'23</strong></a>).</li>
                     <li> [Jul. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>On Continuing DNN Accelerator Architecture Scaling Using Tightly-coupled Compute-on-Memory 3D ICs</papertitle> is accepted to the IEEE Transactions on Very Large Scale Integration Systems (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=92"><strong>TVLSI'23</strong></a>).</li>
@@ -155,15 +156,15 @@
                               <i> <b> Insight 2: </b> Putting common weights on-chip (Subgraph Stationary) could save off-chip data access latency and thus push model towards computattion-bound.</i>
                            </div> -->
                            <div class="link">
-                              <b><a onclick="displayid('abs7');">[abstract]</a></b>
-                              <b><a href="https://arxiv.org/abs/2306.17266">[paper]</a></b>
-                              <b><a onclick="displayid('bib7');">[bibtex]</a></b>
-                              <div id="abs7" style="display:none;">
-                                 A growing number of applications depend on Machine Learning (ML) functionality and benefits from both higher quality ML predictions and better timeliness (latency) at the same time. A growing body of research in computer architecture, ML, and systems software literature focuses on reaching better latency/accuracy tradeoffs for ML models. Efforts include compression, quantization, pruning, early-exit models, mixed DNN precision, as well as ML inference accelerator designs that minimize latency and energy, while preserving delivered accuracy. All of them, however, yield improvements for a single static point in the latency/accuracy tradeoff space. We make a case for applications that operate in dynamically changing deployment scenarios, where no single static point is optimal. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that uses (activates) different SubNets within this weight-shared construct. This creates an opportunity to exploit the inherent temporal locality with our proposed SubGraph Stationary (SGS) optimization. We take a hardware-software co-design approach with a real implementation of SGS in SushiAccel and the implementation of a software scheduler SushiSched controlling which SubNets to serve and what to cache in real-time. Combined, they are vertically integrated into SUSHI---an inference serving stack. For the stream of queries, SUSHI yields up to 25% improvement in latency, 0.98% increase in served accuracy. SUSHI can achieve up to 78.7% off-chip energy savings.
+                              <b><a onclick="displayid('abs10');">[abstract]</a></b>
+                              <!-- <b><a href="">[paper]</a></b> -->
+                              <!-- <b><a onclick="displayid('bib10');">[bibtex]</a></b> -->
+                              <div id="abs10" style="display:none;">
+                                 tinyML applications increasingly operate in dynamically changing deployment scenarios, requiring optimizing for both accuracy and latency. Existing methods mainly target a single point in the accuracy/latency tradeoff space---insufficient as no single static point can be optimal under variable conditions. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that activates different SubNets within a SuperNet. This creates an opportunity to exploit the inherent temporal locality of different queries that use the same SuperNet. We propose a hardware-software co-design called SUSHI that introduces a novel SubGraph Stationary optimization. SUSHI consists of a novel FPGA implementation and a software scheduler that controls which SubNets to serve and what SubGraph to cache in real-time. SUSHI yields up to 32% improvement in latency, 0.98% increase in served accuracy, and achieves up to 78.7% saved off-chip energy across several neural network architectures.
                               </div>
-                              <div id="bib7" style="display:none;">
-                                 Stay in tune
-                              </div>
+                              <!-- <div id="bib10" style="display:none;"> -->
+                                 <!-- Stay in tune -->
+                              <!-- </div> -->
                            </div>
                         </td>
                      </tr>
