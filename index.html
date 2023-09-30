@@ -97,7 +97,7 @@
                     <heading>News</heading>  
                     <div style="height:500px;overflow-y:auto">
                     <p></p><ul>      
-                    <li> [Sep. 2023] <b style="color:#FF2400;">[Award]</b> I won <strong>Best Poster Award.</strong> for presenting our work <papertitle href="https://arxiv.org/abs/2306.17266">SUSHI</papertitle> at  (<a href="https://www.industry-academia.org/mit-2023.html"><strong>IAP Workshop@MIT</strong></a>).</li>
+                    <li> [Sep. 2023] <b style="color:#FF2400;">[Award]</b> I won <strong>Best Poster Award</strong> for presenting our work <papertitle><a href="https://arxiv.org/abs/2306.17266">SUSHI</a></papertitle> at  (<a href="https://www.industry-academia.org/mit-2023.html"><strong>IAP Workshop@MIT</strong></a>).</li>
                     <li> [Sep. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications</papertitle> is accepted to the Journal (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=40"><strong>IEEE micro</strong></a>).</li>
                     <li> [Sep 2023] <b style="color:#9673A6;">[Career]</b> I join MIT as a visiting Ph.D. in CSAIL.</li>
                     <li> [Aug. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors</papertitle> is accepted to the IEEE SENSORS conference (<a href="https://2023.ieee-sensorsconference.org/"><strong>SENSORS'23</strong></a>).</li>
@@ -158,14 +158,29 @@
                            </div> -->
                            <div class="link">
                               <b><a onclick="displayid('abs11');">[abstract]</a></b>
-                              <!-- <b><a href="">[paper]</a></b> -->
-                              <!-- <b><a onclick="displayid('bib10');">[bibtex]</a></b> -->
+                              <b><a href="https://www.computer.org/csdl/magazine/mi/5555/01/10257666/1QARI5P37ZC">[paper]</a></b>
+                              <b><a onclick="displayid('bib11');">[bibtex]</a></b>
                               <div id="abs11" style="display:none;">
                                  tinyML applications increasingly operate in dynamically changing deployment scenarios, requiring optimizing for both accuracy and latency. Existing methods mainly target a single point in the accuracy/latency tradeoff space---insufficient as no single static point can be optimal under variable conditions. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that activates different SubNets within a SuperNet. This creates an opportunity to exploit the inherent temporal locality of different queries that use the same SuperNet. We propose a hardware-software co-design called SUSHI that introduces a novel SubGraph Stationary optimization. SUSHI consists of a novel FPGA implementation and a software scheduler that controls which SubNets to serve and what SubGraph to cache in real-time. SUSHI yields up to 32% improvement in latency, 0.98% increase in served accuracy, and achieves up to 78.7% saved off-chip energy across several neural network architectures.
                               </div>
-                              <!-- <div id="bib10" style="display:none;"> -->
-                                 <!-- Stay in tune -->
-                              <!-- </div> -->
+                              <div id="bib11" style="display:none;">
+                                 @ARTICLE {10257666,
+                                    author = {P. Behnam and J. Tong and A. Khare and Y. Chen and Y. Pan and P. Gadikar and A. Bambhaniya and T. Krishna and A. Tumanov},
+                                    journal = {IEEE Micro},
+                                    title = {Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications},
+                                    year = {5555},
+                                    volume = {},
+                                    number = {01},
+                                    issn = {1937-4143},
+                                    pages = {1-7},
+                                    abstract = {tinyML applications increasingly operate in dynamically changing deployment scenarios, requiring optimizing for both accuracy and latency. Existing methods mainly target a single point in the accuracy/latency tradeoff space—insufficient as no single static point can be optimal under variable conditions. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that activates different SubNets within a SuperNet. This creates an opportunity to exploit the inherent temporal locality of different queries that use the same SuperNet. We propose a hardware-software co-design called SUSHI that introduces a novel SubGraph Stationary optimization. SUSHI consists of a novel FPGA implementation and a software scheduler that controls which SubNets to serve and what SubGraph to cache in real-time. SUSHI yields up to 32% improvement in latency, 0.98% increase in served accuracy, and achieves up to 78.7% saved off-chip energy across several neural network architectures.},
+                                    keywords = {kernel;training;real-time systems;optimization;neural networks;system-on-chip;software},
+                                    doi = {10.1109/MM.2023.3317243},
+                                    publisher = {IEEE Computer Society},
+                                    address = {Los Alamitos, CA, USA},
+                                    month = {sep}
+                                    }
+                              </div>
                            </div>
                         </td>
                      </tr>
@@ -189,7 +204,7 @@
                               <b><a onclick="displayid('abs10');">[abstract]</a></b>
                               <!-- <b><a href="https://assets.researchsquare.com/files/rs-2910088/v1_covered_0e6c94bd-1499-4b2c-b414-902c232b490c.pdf?c=1683777877">[paper]</a></b> -->
                               <!-- <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b> -->
-                              <!-- <b><a href="publications/PAF_FHE_poster.pdf">[poster]</a></b> -->
+                              <b><a href="https://epapers2.org/sensors2023/ESR/paper_details.php?paper_id=1451">[poster]</a></b>
                               <!-- <b><a onclick="displayid('bib8');">[bibtex]</a></b> -->
                               <div id="abs10" style="display:none;">
                                  The use of Machine Learning (ML) models executing on ML Accelerators (MLA) in Intelligent sensors for feature extraction has garnered substantial interest. The Neural Network (NN) architecture implemented of MLA are intellectual property for the vendors. Along with improved power-efficiency and reduced bandwidth, the hardware based ML models embedded in the sensor also provides additional security against cyber-attacks on the ML. In this paper, we introduce an attack referred as SNATCH which uses a profiling-based side channel attack (SCA) that aims to steal the NN architecture executing on a digital MLA (Deep Learning Processing Unit (DPU) IP by Xilinx). We use electromagnetic side channel leakage from a clone device to create a profiler and then attack the victim's device to steal the NN architecture. Stealing the ML model undermines the intellectual property rights of the vendors of a sensor. Further, it also allows an adversary to mount critical Denial of Service and misuse attack. 
@@ -268,6 +283,12 @@
                            </div>
                            <div class="venue">
                               <i>In Proc of Sixth Conference on Machine Learning and Systems (<b style="color:#ff6600;">MLSys</b>), Jun 2023.</i>
+                           </div>
+                           <div> 
+                              <i><b style="color:#ff6600;">++Qualcomm Innovation Fellowship</b></i>
+                           </div>
+                           <div> 
+                              <i><b style="color:#ff6600;">++Best Poster Award (IAP2023@MIT)</b></i>
                            </div>
                            <!-- <div class="insight">
                               <i> <b> Insight 1: </b> Weights-sharing neural network enables a dynamic latency-accuracy serving.</i> <br>
@@ -958,6 +979,15 @@
                         <td width="100%" valign="middle">
                            <table>
                               <tbody>
+                                 <tr>
+                                    <td width="90%">
+                                       <b><a href="https://www.industry-academia.org/mit-2023.html">Best Poster Award</a></b>, USA • Sep. 2023<br>
+                                    </td>
+                                    <td width="10%">
+                                       <img src="./images/iap.png" width="105%" style="display: flex;
+                                             justify-content: center;">
+                                    </td>
+                                 </tr>
                                  <tr>
                                     <td width="90%">
                                        <b>Winner in <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2022-north-america">Qualcomm Innovation Fellowship</a></b>, USA • Jul. 2023<br>
