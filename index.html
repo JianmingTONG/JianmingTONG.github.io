@@ -41,24 +41,24 @@
                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                   <tbody>
                      <tr style="padding:0px">
-                        <td style="padding:2.5%;width:63%;vertical-align:middle">
+                        <td style="padding:2.5%;width:65%;vertical-align:middle">
                            <p style="text-align:center">
                               <name>Jianming Tong</name> <br>
                               <email>jianming [dot] tong [at] gatech [dot] edu</email>
                            </p>
                            <p> Ph.D. at Georgia Tech starting from Spring 2021 </p>
                            <p> Advisor: <a href="https://tusharkrishna.ece.gatech.edu/"> Tushar Krishna </a></p>
-                           <p> Main Developer for SUSHI, <a href="https://maeri-project.github.io/"> MAERI 2.0</a> </p>
+                           <p> Main Developer for <a href="https://arxiv.org/abs/2306.17266">SUSHI</a> , <a href="https://maeri-project.github.io/"> MAERI 2.0</a> </p>
                            <p> My research is funded by <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2023-north-america"> Qualcomm Innovation Fellowship </a> and <a href="https://www.src.org/program/jump2/"> SRC Jump 2.0 </a>  </p>
-                           <p> FPGA Leader in Synergy Lab@Gatech</p>
+                           <p> FPGA and FHE Lead in Synergy Lab @ Gatech</p>
                            <!-- <td width="46%" valign="left"> -->
-                              <div class="research_interests">
+                              <!-- <div class="research_interests">
                                  Research Interest: <br>
                                  - Privacy-Preserving Computing (Homorphic Encryption) <br>
                                  - Deep Learning Compilation and Accelerator <br>
                                  - Hardware-software co-design (FPGA; VLSI Design) <br>
                                  - On-chip Network <br>
-                              </div>
+                              </div> -->
                            <!-- </td> -->
                            <!-- <p>I received my bachelor degree at
                               Xi'an Jiaotong University at 2020 supervised by 
@@ -78,7 +78,7 @@
                               </a> &nbsp/&nbsp
                               <a href="https://www.linkedin.com/in/jianming-tong-a08a59186/"> LinkedIn
                               </a> &nbsp/&nbsp
-			      <a href="https://orcid.org/my-orcid?orcid=0000-0001-8436-2946"> ORCID
+			                      <a href="https://orcid.org/my-orcid?orcid=0000-0001-8436-2946"> ORCID
                               </a> 
                               <!-- <a href="data/Research Summary_JianmingTong.pdf"> Research Summary -->
                               <!-- </a> -->
@@ -93,12 +93,46 @@
                </table>
                <!-- Publications & Manuscripts -->
                <br>
+
+               <table style="width:101%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                  <tr>
+                     <td style="padding:20px;width:100%;vertical-align:middle">
+                     <heading>Research Interest</heading> 
+                     <br>
+                     My primary research area is <b>Computer Architecture</b> with major interest on software-system-hardware codesign for privacy-preserving and performance-oriented AI workloads, i.e. make (private) AI fast and efficient.
+                     <li><b>Model/Algorithm (Software):</b>
+                        <ul>
+                           <li>Fully Homomorphic Encryption (FHE) efficient non-linear approximation:[<a href="https://github.com/TorchFHE/SmartPAF/blob/main/SmartPAF.pdf"> MLSys'24</a>] </li> 
+                           <li>Latency/Accuracy Tradeoff Navigation:[<a href="publications/SUSHI_MLSys2023.pdf"> MLSys'23</a>] </li> 
+                        </ul>
+                     </li> 
+                     <li><b>System:</b>
+                        <ul>
+                           <li>Multi-query Serving Scheduling:[<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=40"> IEEE Micro'23</a>]</li> 
+                           <li>Multi-agent Communication-Compute Balancing:[<a href="https://github.com/efc-robot/SMMR-Explore"> ICRA'21</a>]</li> 
+                        </ul>
+                     </li>
+                     <li><b>Architecture (Hardware):</b>
+                        <ul>
+                           <li>On-Chip Network: [<a href="https://www.glsvlsi.org/archive/glsvlsi21/index.html"> GLSVLSI'21</a>][<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=12"> TOC'21</a>]</li>
+                           <li>ASIC Accelerator: [<a href="https://ieeexplore.ieee.org/abstract/document/9865486"> IMS'22</a>][<a href="https://ieeexplore.ieee.org/abstract/document/9865486"> IMS'23</a>][<a href="https://ieeexplore.ieee.org/abstract/document/10149577"> RadarConf'23</a>][<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=92"> TVLSI'23</a>]</li> 
+                           <li>FPGA Accelerator: [<a href="https://ieeexplore.ieee.org/abstract/document/9609808"> FPT'21</a>][<a href="https://ieeexplore.ieee.org/document/10187950"> IMS'23</a>] </li> 
+                           <li>Side-channel Attack:[<a href="https://epapers2.org/sensors2023/ESR/paper_details.php?paper_id=1451"> SENSOR'23</a>] </li> 
+                        </ul>
+                     </li>
+                  </td>
+               </tbody></table>
+               <br>
                <table style="width:101%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                   <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
                     <heading>News</heading>  
                     <div style="height:500px;overflow-y:auto">
                     <p></p><ul>      
+                    <li> [Feb. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle> <a href="https://github.com/TorchFHE/SmartPAF/blob/main/SmartPAF.pdf"><strong>SmartPAF</strong></a>: Accurate Low-Degree Polynomial Approximation of Non-polynomial Operators for Fast Private Inference in Homomorphic Encryption</papertitle> is accepted to the Seventh Conference on Machine Learning and Systems (<a href="https://mlsys.org/"><strong>MLSys'24</strong></a>).</li>
+                    <li> [Feb. 2023] <b style="color:#9673A6;">[Service]</b> We started course 6.192 <strong>Constructive Computer Architecture</strong> in three schools together this year (MIT, EPFL, GaTech) - <a href="https://mit.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%226c90dae2-5802-4e54-9e21-b10900d0907d%22"><strong> recordings </strong> </a> available online, Go Architects! </a></li>
+                    <li> [Jan. 2023] <b style="color:#9673A6;">[Service]</b> I served <strong>AEC</strong> for <a href="https://iscaconf.org/isca2024/"><strong>ISCA'24</strong></a>.</li>
+                    <li> [Nov. 2023] <b style="color:#9673A6;">[Service]</b> I join Computer Architecture Student Association (<a href="https://www.sigarch.org/casa/"><strong> CASA </strong> </a>) steering team, from the architects for the architects. </li> 
                     <li> [Oct. 2023] <b style="color:#ff6600;">[Talk]</b> I gave a talk on <papertitle href="https://arxiv.org/abs/2306.17266">SUSHI</papertitle> and <papertitle href="https://assets.researchsquare.com/files/rs-2910088/v1_covered_0e6c94bd-1499-4b2c-b414-902c232b490c.pdf?c=1683777877">PAF-FHE</papertitle> at <a href="https://hanlab.mit.edu/"><strong> HAN Lab @ MIT.</strong> </a></li> 
                     <li> [Sep. 2023] <b style="color:#FF2400;">[Award]</b> I won <strong>Best Poster Award</strong> for presenting our work <papertitle><a href="https://arxiv.org/abs/2306.17266">SUSHI</a></papertitle> at  (<a href="https://www.industry-academia.org/mit-2023.html"><strong>IAP Workshop@MIT</strong></a>).</li>
                     <li> [Sep. 2023] <b style="color:#82B366;">[Paper]</b> Our work <papertitle>Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications</papertitle> is accepted to the Journal (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=40"><strong>IEEE micro</strong></a>).</li>
@@ -131,492 +165,359 @@
                   </td>
                 </tr>
               </tbody></table>
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    
-               <table width="100%" align="right" border="0" cellspacing="0" cellpadding="10">
-                  <tbody>
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+               <!-- <table width="100%" align="right" border="0" cellspacing="0" cellpadding="10"> -->
+                  <!-- <tbody> -->
                      <heading>Publications (* Equal Contribution)</heading>
                      <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://paymanbehnam.com/">Payman Behnam*</a>,
-                              <b>Jianming Tong*</b>,
-                              <a href="https://www.cc.gatech.edu/~akhare39/">Alind Khare</a>,
-                              <a href="https://www.linkedin.com/in/yangyu-chen/">Yangyu Chen</a>,
-                              <a href="https://www.linkedin.com/in/yue-pan-061439192/">Yue Pan</a>,
-                              <a href="https://www.linkedin.com/in/abhimanyu-bambhaniya/">Abhimanyu Bambhaniya</a>,
-                              <a>Pranav Gadikar</a>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>, and
-                              <a href="https://www.cc.gatech.edu/~atumanov/">Alexey Tumanov</a>
-                           </div>
-                           <div class="venue">
-                              <i> (<b style="color:#ff6600;">IEEE micro</b>), Sep 2023.</i>
-                           </div>
-                           <!-- <div class="insight">
-                              <i> <b> Insight 1: </b> Weights-sharing neural network enables a dynamic latency-accuracy serving.</i> <br>
-                              <i> <b> Insight 2: </b> Putting common weights on-chip (Subgraph Stationary) could save off-chip data access latency and thus push model towards computattion-bound.</i>
-                           </div> -->
-                           <div class="link">
-                              <b><a onclick="displayid('abs11');">[abstract]</a></b>
-                              <b><a href="https://www.computer.org/csdl/magazine/mi/5555/01/10257666/1QARI5P37ZC">[paper]</a></b>
-                              <b><a onclick="displayid('bib11');">[bibtex]</a></b>
-                              <div id="abs11" style="display:none;">
-                                 tinyML applications increasingly operate in dynamically changing deployment scenarios, requiring optimizing for both accuracy and latency. Existing methods mainly target a single point in the accuracy/latency tradeoff space---insufficient as no single static point can be optimal under variable conditions. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that activates different SubNets within a SuperNet. This creates an opportunity to exploit the inherent temporal locality of different queries that use the same SuperNet. We propose a hardware-software co-design called SUSHI that introduces a novel SubGraph Stationary optimization. SUSHI consists of a novel FPGA implementation and a software scheduler that controls which SubNets to serve and what SubGraph to cache in real-time. SUSHI yields up to 32% improvement in latency, 0.98% increase in served accuracy, and achieves up to 78.7% saved off-chip energy across several neural network architectures.
-                              </div>
-                              <div id="bib11" style="display:none;">
-                                 @ARTICLE {10257666,
-                                    author = {P. Behnam and J. Tong and A. Khare and Y. Chen and Y. Pan and P. Gadikar and A. Bambhaniya and T. Krishna and A. Tumanov},
-                                    journal = {IEEE Micro},
-                                    title = {Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications},
-                                    year = {5555},
-                                    volume = {},
-                                    number = {01},
-                                    issn = {1937-4143},
-                                    pages = {1-7},
-                                    abstract = {tinyML applications increasingly operate in dynamically changing deployment scenarios, requiring optimizing for both accuracy and latency. Existing methods mainly target a single point in the accuracy/latency tradeoff space—insufficient as no single static point can be optimal under variable conditions. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that activates different SubNets within a SuperNet. This creates an opportunity to exploit the inherent temporal locality of different queries that use the same SuperNet. We propose a hardware-software co-design called SUSHI that introduces a novel SubGraph Stationary optimization. SUSHI consists of a novel FPGA implementation and a software scheduler that controls which SubNets to serve and what SubGraph to cache in real-time. SUSHI yields up to 32% improvement in latency, 0.98% increase in served accuracy, and achieves up to 78.7% saved off-chip energy across several neural network architectures.},
-                                    keywords = {kernel;training;real-time systems;optimization;neural networks;system-on-chip;software},
-                                    doi = {10.1109/MM.2023.3317243},
-                                    publisher = {IEEE Computer Society},
-                                    address = {Los Alamitos, CA, USA},
-                                    month = {sep}
-                                    }
-                              </div>
-                           </div>
-                        </td>
-                     </tr>
-                     
-                     <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://www.sudarshan-sh.com/"> Sudarshan Sharma</a>,
-                              <a href="https://udaykamal20.github.io/"> Uday Kamal</a>,
-                              <b>Jianming Tong</b>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
-                              and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
-                           </div>
-                           <div class="venue">
-                              <i>IEEE SENSORS conference(<b style="color:#ff6600;">SENSORS</b>), Aug 2023.</i>
-                           </div>
-                           <div class="link">
-                              <b><a onclick="displayid('abs10');">[abstract]</a></b>
-                              <!-- <b><a href="https://assets.researchsquare.com/files/rs-2910088/v1_covered_0e6c94bd-1499-4b2c-b414-902c232b490c.pdf?c=1683777877">[paper]</a></b> -->
-                              <!-- <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b> -->
-                              <b><a href="https://epapers2.org/sensors2023/ESR/paper_details.php?paper_id=1451">[poster]</a></b>
-                              <!-- <b><a onclick="displayid('bib8');">[bibtex]</a></b> -->
-                              <div id="abs10" style="display:none;">
-                                 The use of Machine Learning (ML) models executing on ML Accelerators (MLA) in Intelligent sensors for feature extraction has garnered substantial interest. The Neural Network (NN) architecture implemented of MLA are intellectual property for the vendors. Along with improved power-efficiency and reduced bandwidth, the hardware based ML models embedded in the sensor also provides additional security against cyber-attacks on the ML. In this paper, we introduce an attack referred as SNATCH which uses a profiling-based side channel attack (SCA) that aims to steal the NN architecture executing on a digital MLA (Deep Learning Processing Unit (DPU) IP by Xilinx). We use electromagnetic side channel leakage from a clone device to create a profiler and then attack the victim's device to steal the NN architecture. Stealing the ML model undermines the intellectual property rights of the vendors of a sensor. Further, it also allows an adversary to mount critical Denial of Service and misuse attack. 
-                              </div>
-                              <!-- <div id="bib8" style="display:none;">
-                                 @misc {PPR:PPR658940,
-                                    Title = {PAF-FHE: Low-Cost Accurate Non-Polynomial Operator Polynomial Approximation in Fully Homomorphic Encryption Based ML Inference},
-                                    Author = {Dang, Jingtian and Tong, Jianming and Golder, Anupam and Raychowdhury, Arijit and Hao, Cong and Krishna, Tushar},
-                                    DOI = {10.21203/rs.3.rs-2910088/v1},
-                                    Abstract = {Machine learning (ML) is getting more pervasive. Wide adoption of ML in healthcare, facial recognition, and blockchain involves private and sensitive data. One of the most promising candidates for inference on encrypted data, termed Fully Homomorphic Encryp-tion (FHE), preserves the privacy of both data and the ML model. However, it slows down plaintext inference by six magnitudes, with a root cause of replacing non-polynomial operators with latency-prohibitive 27-degree Polynomial Approximated Function (PAF). While prior research has investigated low-degree PAFs, naive stochastic gradient descent (SGD) training fails to converge on PAFs with degrees higher than 5, leading to limited accuracy compared to the state-of-the-art 27-degree PAF. Therefore, we propose four training techniques to enable convergence in the post-approximation model using PAFs with an arbitrary degree, including (1) Dynamic Scaling (DS) and Static Scaling (SS) to enable minimal approximation error during approximation, (2) Coefficient Tuning (CT) to obtain a good initial coefficient value for each PAF, (3) Progressive Approximation (PA) to simply the two-variable regression optimization problem into single-variable for fast 1 and easy convergence, and (4) Alternate Training (AT) to retraining the post-replacement PAFs and other linear layers in a decoupled divide-and-conquer manner. A combination of DS/SS, CT, PA, and AT enables the exploration of accuracy-latency space for FHE-domain ReLU replacement. Leveraging the proposed techniques, we propose a systematic approach (PAF-FHE) to enable low-degree PAF to demonstrate the same accuracy as SotA high-degree PAFs. We evaluated PAFs with various degrees on different models and variant datasets, and PAF-FHE consistently enables low-degree PAF to achieve higher accuracy than SotA PAFs. Specifically, for ResNet-18 under the ImageNet-1k dataset, our spotted optimal 12-degree PAF reduces 56% latency compared to the SotA 27-degree PAF with the same post-replacement accuracy (69.4%). While as for VGG-19 under the CiFar-10 dataset, optimal 12-degree PAF achieves even 0.84% higher accuracy with 72% latency saving. Our code is open-sourced at: https://github.com/TorchFHE/PAF-FHE},
-                                    Publisher = {Research Square},
-                                    Year = {2023},
-                                    URL = {https://doi.org/10.21203/rs.3.rs-2910088/v1},
-                                 }
-                              </div> -->
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>On Continuing DNN Accelerator Architecture Scaling Using Tightly-coupled Compute-on-Memory 3D ICs</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://www.linkedin.com/in/gauthaman-murali-4110a732/">Gauthaman Murali</a>,
-                              <a href="https://www.linkedin.com/in/adityaiyer99/">Aditya Iyer</a>,
-                              <a href="https://www.linkedin.com/in/lingjunzhu/?locale=en_US">Lingjun Zhu</a>,
-                              <b>Jianming Tong</b>,
-                              <a href="https://www.linkedin.com/in/fr-munoz-mrtinez/?originalSubdomain=es">Francisco Munoz Martinez</a>,
-                              <a href="https://www.linkedin.com/in/srivatsa-rangachar-srinivasa-8b0b4a130/">Srivatsa Rangachar Srinivasa</a>,
-                              <a href="https://ieeexplore.ieee.org/author/37268291400">Tanay Karnik</a>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
-                              <a href="https://ece.gatech.edu/directory/sung-kyu-lim">Sung Kyu Lim</a>
-                           </div>
-                           <div class="venue">
-                              <i>IEEE Transactions on Very Large Scale Integration Systems (<b style="color:#ff6600;">TVLSI</b>), Jul 2023.</i>
-                           </div>
-                           <div class="link">
-                              <b><a onclick="displayid('abs9');">[abstract]</a></b>
-                              <b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10221779">[paper]</a></b>
-                              <!-- <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b> -->
-                              <!-- <b><a href="publications/PAF_FHE_poster.pdf">[poster]</a></b> -->
-                              <b><a onclick="displayid('bib9');">[bibtex]</a></b>
-                              <div id="abs9" style="display:none;">
-                                 This work identifies the architectural and design scaling limits of 2D flexible interconnect DNN accelerators and addresses them with 3D ICs. We demonstrate how scaling up a baseline 2D accelerator in the X/Y dimension fails and how vertical stacking effectively overcomes the failure. We designed multi-tier accelerators that are 1.67X faster than the 2D design. Using our 3D architecture and circuit co-design methodology, we improve throughput, energy-efficiency, and area-efficiency by up to 5X, 1.2X, and 3.9X, respectively, over 2D counterparts. The IR-drop in our 3D designs is within 10.7% of VDD, and the temperature variation is within 12˚C.
-                              </div>
-                              <div id="bib9" style="display:none;">
-                                 @ARTICLE{10221779,
-                                    author={Murali, Gauthaman and Iyer, Aditya and Zhu, Lingjun and Tong, Jianming and Martínez, Francisco Muñoz and Srinivasa, Srivatsa Rangachar and Karnik, Tanay and Krishna, Tushar and Lim, Sung Kyu},
-                                    journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems}, 
-                                    title={On Continuing DNN Accelerator Architecture Scaling Using Tightly Coupled Compute-on-Memory 3-D ICs}, 
-                                    year={2023},
-                                    volume={},
-                                    number={},
-                                    pages={1-11},
-                                    doi={10.1109/TVLSI.2023.3299564}}
-                              </div>
-                           </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>SUSHI: SUbgraph Stationary Hardware-software Inference Co-design</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://paymanbehnam.com/">Payman Behnam*</a>,
-                              <b>Jianming Tong*</b>,
-                              <a href="https://www.cc.gatech.edu/~akhare39/">Alind Khare</a>,
-                              <a href="https://www.linkedin.com/in/yangyu-chen/">Yangyu Chen</a>,
-                              <a href="https://www.linkedin.com/in/yue-pan-061439192/">Yue Pan</a>,
-                              <a href="https://www.linkedin.com/in/abhimanyu-bambhaniya/">Abhimanyu Bambhaniya</a>,
-                              <a>Pranav Gadikar</a>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>, and
-                              <a href="https://www.cc.gatech.edu/~atumanov/">Alexey Tumanov</a>
-                           </div>
-                           <div class="venue">
-                              <i>In Proc of Sixth Conference on Machine Learning and Systems (<b style="color:#ff6600;">MLSys</b>), Jun 2023.</i>
-                           </div>
-                           <div> 
-                              <i><b style="color:#ff6600;">++Qualcomm Innovation Fellowship</b></i>
-                           </div>
-                           <div> 
-                              <i><b style="color:#ff6600;">++Best Poster Award (IAP2023@MIT)</b></i>
-                           </div>
-                           <!-- <div class="insight">
-                              <i> <b> Insight 1: </b> Weights-sharing neural network enables a dynamic latency-accuracy serving.</i> <br>
-                              <i> <b> Insight 2: </b> Putting common weights on-chip (Subgraph Stationary) could save off-chip data access latency and thus push model towards computattion-bound.</i>
-                           </div> -->
-                           <div class="link">
-                              <b><a onclick="displayid('abs7');">[abstract]</a></b>
-                              <b><a href="https://arxiv.org/abs/2306.17266">[paper]</a></b>
-                              <b><a onclick="displayid('bib7');">[bibtex]</a></b>
-                              <div id="abs7" style="display:none;">
-                                 A growing number of applications depend on Machine Learning (ML) functionality and benefits from both higher quality ML predictions and better timeliness (latency) at the same time. A growing body of research in computer architecture, ML, and systems software literature focuses on reaching better latency/accuracy tradeoffs for ML models. Efforts include compression, quantization, pruning, early-exit models, mixed DNN precision, as well as ML inference accelerator designs that minimize latency and energy, while preserving delivered accuracy. All of them, however, yield improvements for a single static point in the latency/accuracy tradeoff space. We make a case for applications that operate in dynamically changing deployment scenarios, where no single static point is optimal. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that uses (activates) different SubNets within this weight-shared construct. This creates an opportunity to exploit the inherent temporal locality with our proposed SubGraph Stationary (SGS) optimization. We take a hardware-software co-design approach with a real implementation of SGS in SushiAccel and the implementation of a software scheduler SushiSched controlling which SubNets to serve and what to cache in real-time. Combined, they are vertically integrated into SUSHI---an inference serving stack. For the stream of queries, SUSHI yields up to 25% improvement in latency, 0.98% increase in served accuracy. SUSHI can achieve up to 78.7% off-chip energy savings.
-                              </div>
-                              <div id="bib7" style="display:none;">
-                                 Stay in tune
-                              </div>
-                           </div>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/smartpaf.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%" valign="middle">
+                                       <div class="title">
+                                          <b>SmartPAF: Accurate Low-Degree Polynomial Approximation of Non-polynomial Operators for Fast Private Inference in Homomorphic Encryption</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://www.linkedin.com/in/jingtian-dang-568615207/">Jingtian Dang*</a>,
+                                          <b>Jianming Tong*</b>,
+                                          <a href="https://scholar.google.com/citations?user=QLN76UUAAAAJ&hl=en">Anupam Golder</a>,
+                                          <a href="https://sites.gatech.edu/ece-callie/">Callie Hao</a>,
+                                          <a href="https://scholar.google.com/citations?hl=en&user=lXUce-0AAAAJ">Arijit Raychowdhury</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
+                                       </div>
+                                       <div class="venue">
+                                          <i> (<b style="color:#ff6600;">MLSys</b>), Jun 2024.</i>
+                                       </div>
+                                       <!-- <div class="insight">
+                                          <i> <b> Insight 1: </b> Weights-sharing neural network enables a dynamic latency-accuracy serving.</i> <br>
+                                          <i> <b> Insight 2: </b> Putting common weights on-chip (Subgraph Stationary) could save off-chip data access latency and thus push model towards computattion-bound.</i>
+                                       </div> -->
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs12');">[abstract]</a></b>
+                                          <b><a href="https://github.com/TorchFHE/SmartPAF/blob/main/SmartPAF.pdf">[paper]</a></b>
+                                          <b><a onclick="displayid('bib12');">[bibtex]</a></b>
+                                          <div id="abs12" style="display:none;">
+                                             As machine learning (ML) permeates fields like healthcare, facial recognition, and blockchain, the need to protect sensitive data intensifies. Fully Homomorphic Encryption (FHE) allows inference on encrypted data, preserving the privacy of both data and the ML model. However, it slows down non-secure inference by up to five magnitudes, with a root cause of replacing non-polynomial operators (ReLU and MaxPooling) with high-degree Polynomial Approximated Function (PAF). We propose SmartPAF, a framework to replace non-polynomial operators with low-degree PAF and then recover the accuracy of PAF-approximated model through four techniques: (1) Coefficient Tuning (CT) -- adjust PAF coefficients based on the input distributions before training, (2) Progressive Approximation (PA) -- progressively replace one non-polynomial operator at a time followed by a fine-tuning, (3) Alternate Training (AT) -- alternate the training between PAFs and other linear operators in the decoupled manner, and (4) Dynamic Scale (DS) / Static Scale (SS) -- dynamically scale PAF input value within (-1, 1) in training, and fix the scale as the running max value in FHE deployment. The synergistic effect of CT, PA, AT, and DS/SS enables SmartPAF to enhance the accuracy of the various models approximated by PAFs with various low degrees under multiple datasets. For ResNet-18 under ImageNet-1k, the Pareto-frontier spotted by SmartPAF in latency-accuracy tradeoff space achieves 1.42x ~ 13.64x accuracy improvement and 6.79x ~ 14.9x speedup than prior works. Further, SmartPAF enables a 14-degree PAF (f1^2 g_1^2) to achieve 7.81x speedup compared to the 27-degree PAF obtained by minimax approximation with the same 69.4% post-replacement accuracy. Our code is available at \url{https://github.com/TorchFHE/SmartPAF}
+                                          </div>
+                                          <div id="bib12" style="display:none;">
+                                             stay tune!
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </td>
                      </tr>
 
-                    
+
                      <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>PAF-FHE: Low-Cost Accurate Non-Polynomial Operator Polynomial Approximation in Fully Homomorphic Encryption Based ML Inference</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://www.linkedin.com/in/jingtian-dang-568615207/">Jingtian Dang*</a>,
-                              <b>Jianming Tong*</b>,
-                              <a href="https://scholar.google.com/citations?user=QLN76UUAAAAJ&hl=en">Anupam Golder</a>,
-                              <a href="https://sites.gatech.edu/ece-callie/">Callie Hao</a>,
-                              <a href="https://scholar.google.com/citations?hl=en&user=lXUce-0AAAAJ">Arijit Raychowdhury</a>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
-                           </div>
-                           <div class="venue">
-                              <i>International Journal of Parallel Programming (<b style="color:#ff6600;">IJPP</b>), May 2023.</i>
-                           </div>
-                           <!-- <div class="insight">
-                              <i> <b> Insight 1: </b> Initialization and Scale in non-polynomial operators affects convergence speed and final accuracy in fine-tune of postß-polynomial-approximated ML models.</i> <br>
-                              <i> <b> Insight 2: </b> Progressive replacement simplified polynomial replacement problem to simple convex optimization where distribution based initilization and scaling effectly improves convergence speed and final accuracy.</i> <br>
-                           </div> -->
-                           <div class="link">
-                              <b><a onclick="displayid('abs8');">[abstract]</a></b>
-                              <b><a href="https://assets.researchsquare.com/files/rs-2910088/v1_covered_0e6c94bd-1499-4b2c-b414-902c232b490c.pdf?c=1683777877">[paper]</a></b>
-                              <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b>
-                              <b><a href="publications/PAF_FHE_poster.pdf">[poster]</a></b>
-                              <b><a onclick="displayid('bib8');">[bibtex]</a></b>
-                              <div id="abs8" style="display:none;">
-                                 Machine learning (ML) is getting more pervasive. Wide adoption of ML in healthcare, facial recognition, and blockchain involves private and sensitive data. One of the most promising candidates for inference on encrypted data, termed Fully Homomorphic Encryption (FHE), preserves the privacy of both data and the ML model. However, it slows down plaintext inference by six magnitudes, with a root cause of replacing non-polynomial operators with latency-prohibitive 27-degree Polynomial Approximated Function (PAF). While prior research has investigated low-degree PAFs, naive stochastic gradient descent (SGD) training fails to converge on PAFs with degrees higher than 5, leading to limited accuracy compared to the state-of-the-art 27-degree PAF. Therefore, we propose four training techniques to enable convergence in the post-approximation model using PAFs with an arbitrary degree, including (1) Dynamic Scaling (DS) and Static Scaling (SS) to enable minimal approximation error during approximation, (2) Coefficient Tuning (CT) to obtain a good initial coefficient value for each PAF, (3) Progressive Approximation (PA) to simply the two-variable regression optimization problem into single-variable for fast  and easy convergence, and (4) Alternate Training (AT) to retraining the post-replacement PAFs and other linear layers in a decoupled divide-and-conquer manner. A combination of DS/SS, CT, PA, and AT enables the exploration of accuracy-latency space for FHEdomain ReLU replacement. Leveraging the proposed techniques, we propose a systematic approach (PAF-FHE) to enable low-degree PAF to demonstrate the same accuracy as SotA high-degree PAFs. We evaluated PAFs with various degrees on different models and variant datasets, and PAF-FHE consistently enables low-degree PAF to achieve higher accuracy than SotA PAFs. Specifically, for ResNet-18 under the ImageNet-1k dataset, our spotted optimal 12-degree PAF reduces 56% latency compared to the SotA 27-degree PAF with the same post-replacement accuracy (69.4%). While as for VGG-19 under the CiFar-10 dataset, optimal 12-degree PAF achieves even 0.84% higher accuracy with 72% latency saving. Our code is open-sourced at: https://github.com/TorchFHE/PAF-FHE.
-                              </div>
-                              <div id="bib8" style="display:none;">
-                                 @misc {PPR:PPR658940,
-                                    Title = {PAF-FHE: Low-Cost Accurate Non-Polynomial Operator Polynomial Approximation in Fully Homomorphic Encryption Based ML Inference},
-                                    Author = {Dang, Jingtian and Tong, Jianming and Golder, Anupam and Raychowdhury, Arijit and Hao, Cong and Krishna, Tushar},
-                                    DOI = {10.21203/rs.3.rs-2910088/v1},
-                                    Abstract = {Machine learning (ML) is getting more pervasive. Wide adoption of ML in healthcare, facial recognition, and blockchain involves private and sensitive data. One of the most promising candidates for inference on encrypted data, termed Fully Homomorphic Encryp-tion (FHE), preserves the privacy of both data and the ML model. However, it slows down plaintext inference by six magnitudes, with a root cause of replacing non-polynomial operators with latency-prohibitive 27-degree Polynomial Approximated Function (PAF). While prior research has investigated low-degree PAFs, naive stochastic gradient descent (SGD) training fails to converge on PAFs with degrees higher than 5, leading to limited accuracy compared to the state-of-the-art 27-degree PAF. Therefore, we propose four training techniques to enable convergence in the post-approximation model using PAFs with an arbitrary degree, including (1) Dynamic Scaling (DS) and Static Scaling (SS) to enable minimal approximation error during approximation, (2) Coefficient Tuning (CT) to obtain a good initial coefficient value for each PAF, (3) Progressive Approximation (PA) to simply the two-variable regression optimization problem into single-variable for fast 1 and easy convergence, and (4) Alternate Training (AT) to retraining the post-replacement PAFs and other linear layers in a decoupled divide-and-conquer manner. A combination of DS/SS, CT, PA, and AT enables the exploration of accuracy-latency space for FHE-domain ReLU replacement. Leveraging the proposed techniques, we propose a systematic approach (PAF-FHE) to enable low-degree PAF to demonstrate the same accuracy as SotA high-degree PAFs. We evaluated PAFs with various degrees on different models and variant datasets, and PAF-FHE consistently enables low-degree PAF to achieve higher accuracy than SotA PAFs. Specifically, for ResNet-18 under the ImageNet-1k dataset, our spotted optimal 12-degree PAF reduces 56% latency compared to the SotA 27-degree PAF with the same post-replacement accuracy (69.4%). While as for VGG-19 under the CiFar-10 dataset, optimal 12-degree PAF achieves even 0.84% higher accuracy with 72% latency saving. Our code is open-sourced at: https://github.com/TorchFHE/PAF-FHE},
-                                    Publisher = {Research Square},
-                                    Year = {2023},
-                                    URL = {https://doi.org/10.21203/rs.3.rs-2910088/v1},
-                                 }
-                              </div>
-                           </div>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/sushi_micro.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%" valign="middle">
+                                       <div class="title">
+                                          <b>Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://paymanbehnam.com/">Payman Behnam*</a>,
+                                          <b>Jianming Tong*</b>,
+                                          <a href="https://www.cc.gatech.edu/~akhare39/">Alind Khare</a>,
+                                          <a href="https://www.linkedin.com/in/yangyu-chen/">Yangyu Chen</a>,
+                                          <a href="https://www.linkedin.com/in/yue-pan-061439192/">Yue Pan</a>,
+                                          <a href="https://www.linkedin.com/in/abhimanyu-bambhaniya/">Abhimanyu Bambhaniya</a>,
+                                          <a>Pranav Gadikar</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>, and
+                                          <a href="https://www.cc.gatech.edu/~atumanov/">Alexey Tumanov</a>
+                                       </div>
+                                       <div class="venue">
+                                          <i> (<b style="color:#ff6600;">IEEE micro</b>), Sep 2023.</i>
+                                       </div>
+                                       <!-- <div class="insight">
+                                          <i> <b> Insight 1: </b> Weights-sharing neural network enables a dynamic latency-accuracy serving.</i> <br>
+                                          <i> <b> Insight 2: </b> Putting common weights on-chip (Subgraph Stationary) could save off-chip data access latency and thus push model towards computattion-bound.</i>
+                                       </div> -->
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs11');">[abstract]</a></b>
+                                          <b><a href="https://www.computer.org/csdl/magazine/mi/5555/01/10257666/1QARI5P37ZC">[paper]</a></b>
+                                          <b><a onclick="displayid('bib11');">[bibtex]</a></b>
+                                          <div id="abs11" style="display:none;">
+                                             tinyML applications increasingly operate in dynamically changing deployment scenarios, requiring optimizing for both accuracy and latency. Existing methods mainly target a single point in the accuracy/latency tradeoff space---insufficient as no single static point can be optimal under variable conditions. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that activates different SubNets within a SuperNet. This creates an opportunity to exploit the inherent temporal locality of different queries that use the same SuperNet. We propose a hardware-software co-design called SUSHI that introduces a novel SubGraph Stationary optimization. SUSHI consists of a novel FPGA implementation and a software scheduler that controls which SubNets to serve and what SubGraph to cache in real-time. SUSHI yields up to 32% improvement in latency, 0.98% increase in served accuracy, and achieves up to 78.7% saved off-chip energy across several neural network architectures.
+                                          </div>
+                                          <div id="bib11" style="display:none;">
+                                             @ARTICLE {10257666,
+                                                author = {P. Behnam and J. Tong and A. Khare and Y. Chen and Y. Pan and P. Gadikar and A. Bambhaniya and T. Krishna and A. Tumanov},
+                                                journal = {IEEE Micro},
+                                                title = {Hardware-Software co-design for real-time latency-accuracy navigation in tinyML applications},
+                                                year = {5555},
+                                                volume = {},
+                                                number = {01},
+                                                issn = {1937-4143},
+                                                pages = {1-7},
+                                                abstract = {tinyML applications increasingly operate in dynamically changing deployment scenarios, requiring optimizing for both accuracy and latency. Existing methods mainly target a single point in the accuracy/latency tradeoff space—insufficient as no single static point can be optimal under variable conditions. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that activates different SubNets within a SuperNet. This creates an opportunity to exploit the inherent temporal locality of different queries that use the same SuperNet. We propose a hardware-software co-design called SUSHI that introduces a novel SubGraph Stationary optimization. SUSHI consists of a novel FPGA implementation and a software scheduler that controls which SubNets to serve and what SubGraph to cache in real-time. SUSHI yields up to 32% improvement in latency, 0.98% increase in served accuracy, and achieves up to 78.7% saved off-chip energy across several neural network architectures.},
+                                                keywords = {kernel;training;real-time systems;optimization;neural networks;system-on-chip;software},
+                                                doi = {10.1109/MM.2023.3317243},
+                                                publisher = {IEEE Computer Society},
+                                                address = {Los Alamitos, CA, USA},
+                                                month = {sep}
+                                                }
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </td>
                      </tr>
 
+
                      <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>FPGA-Based High-Performance Real-Time Emulation of Radar System using Direct Path Compute Model</b>
-                           </div>
-                           <div class="authors">
-                              <a>Xiangyu Mao*</a>,
-                              <a href="https://www.linkedin.com/in/jamin-seo-8aba1a13b/?originalSubdomain=kr">Mandovi Mukherjee*</a>,
-                              <a href="https://scholar.google.com/citations?user=5gRIUykAAAAJ&hl=en">Nael Mizanur Rahman*</a>,
-                              <a>Uday Kamal</a>,
-                              <a>Sudarshan Sharma</a>,
-                              <a>Payman Behnam</a>,
-                              <b>Jianming Tong</b>,
-                              <a>Jongseok Woo</a>,
-                              <a>Coleman B DeLude</a>,
-                              <a>Joseph W. Driscoll</a>,
-                              <a>Jamin Seo</a>,
-                              <a>Santosh Pande</a>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
-                              <a>Justin Romberg</a>,
-                              <a>Madhavan Swaminathan</a>,
-                              and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
-                           </div>
-                           <div class="venue">
-                              <i>International Microwave Symposium (<b style="color:#ff6600;">IMS</b>), Jun 2023.</i>
-                           </div>
-                           <div class="link">
-                              <b><a onclick="displayid('abs7');">[abstract]</a></b>
-                              <b><a href="">[paper]</a></b>
-                              <b><a onclick="displayid('bib7');">[bibtex]</a></b>
-                              <div id="abs7" style="display:none;">
-                                 Stay in tune
-                              </div>
-                              <div id="bib7" style="display:none;">
-                                 Stay in tune
-                              </div>
-                           </div>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/snatch.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%" valign="middle">
+                                       <div class="title">
+                                          <b>SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://www.sudarshan-sh.com/"> Sudarshan Sharma</a>,
+                                          <a href="https://udaykamal20.github.io/"> Uday Kamal</a>,
+                                          <b>Jianming Tong</b>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
+                                          and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
+                                       </div>
+                                       <div class="venue">
+                                          <i>IEEE SENSORS conference(<b style="color:#ff6600;">SENSORS</b>), Aug 2023.</i>
+                                       </div>
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs10');">[abstract]</a></b>
+                                          <!-- <b><a href="https://assets.researchsquare.com/files/rs-2910088/v1_covered_0e6c94bd-1499-4b2c-b414-902c232b490c.pdf?c=1683777877">[paper]</a></b> -->
+                                          <!-- <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b> -->
+                                          <b><a href="https://epapers2.org/sensors2023/ESR/paper_details.php?paper_id=1451">[poster]</a></b>
+                                          <!-- <b><a onclick="displayid('bib8');">[bibtex]</a></b> -->
+                                          <div id="abs10" style="display:none;">
+                                             The use of Machine Learning (ML) models executing on ML Accelerators (MLA) in Intelligent sensors for feature extraction has garnered substantial interest. The Neural Network (NN) architecture implemented of MLA are intellectual property for the vendors. Along with improved power-efficiency and reduced bandwidth, the hardware based ML models embedded in the sensor also provides additional security against cyber-attacks on the ML. In this paper, we introduce an attack referred as SNATCH which uses a profiling-based side channel attack (SCA) that aims to steal the NN architecture executing on a digital MLA (Deep Learning Processing Unit (DPU) IP by Xilinx). We use electromagnetic side channel leakage from a clone device to create a profiler and then attack the victim's device to steal the NN architecture. Stealing the ML model undermines the intellectual property rights of the vendors of a sensor. Further, it also allows an adversary to mount critical Denial of Service and misuse attack. 
+                                          </div>
+                                          <!-- <div id="bib8" style="display:none;">
+                                             @misc {PPR:PPR658940,
+                                                Title = {PAF-FHE: Low-Cost Accurate Non-Polynomial Operator Polynomial Approximation in Fully Homomorphic Encryption Based ML Inference},
+                                                Author = {Dang, Jingtian and Tong, Jianming and Golder, Anupam and Raychowdhury, Arijit and Hao, Cong and Krishna, Tushar},
+                                                DOI = {10.21203/rs.3.rs-2910088/v1},
+                                                Abstract = {Machine learning (ML) is getting more pervasive. Wide adoption of ML in healthcare, facial recognition, and blockchain involves private and sensitive data. One of the most promising candidates for inference on encrypted data, termed Fully Homomorphic Encryp-tion (FHE), preserves the privacy of both data and the ML model. However, it slows down plaintext inference by six magnitudes, with a root cause of replacing non-polynomial operators with latency-prohibitive 27-degree Polynomial Approximated Function (PAF). While prior research has investigated low-degree PAFs, naive stochastic gradient descent (SGD) training fails to converge on PAFs with degrees higher than 5, leading to limited accuracy compared to the state-of-the-art 27-degree PAF. Therefore, we propose four training techniques to enable convergence in the post-approximation model using PAFs with an arbitrary degree, including (1) Dynamic Scaling (DS) and Static Scaling (SS) to enable minimal approximation error during approximation, (2) Coefficient Tuning (CT) to obtain a good initial coefficient value for each PAF, (3) Progressive Approximation (PA) to simply the two-variable regression optimization problem into single-variable for fast 1 and easy convergence, and (4) Alternate Training (AT) to retraining the post-replacement PAFs and other linear layers in a decoupled divide-and-conquer manner. A combination of DS/SS, CT, PA, and AT enables the exploration of accuracy-latency space for FHE-domain ReLU replacement. Leveraging the proposed techniques, we propose a systematic approach (PAF-FHE) to enable low-degree PAF to demonstrate the same accuracy as SotA high-degree PAFs. We evaluated PAFs with various degrees on different models and variant datasets, and PAF-FHE consistently enables low-degree PAF to achieve higher accuracy than SotA PAFs. Specifically, for ResNet-18 under the ImageNet-1k dataset, our spotted optimal 12-degree PAF reduces 56% latency compared to the SotA 27-degree PAF with the same post-replacement accuracy (69.4%). While as for VGG-19 under the CiFar-10 dataset, optimal 12-degree PAF achieves even 0.84% higher accuracy with 72% latency saving. Our code is open-sourced at: https://github.com/TorchFHE/PAF-FHE},
+                                                Publisher = {Research Square},
+                                                Year = {2023},
+                                                URL = {https://doi.org/10.21203/rs.3.rs-2910088/v1},
+                                             }
+                                          </div> -->
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </td>
                      </tr>
 
+
                      <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>A High Performance Computing Architecture for Real-Time Digital Emulation of RF Interactions</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://www.linkedin.com/in/jamin-seo-8aba1a13b/?originalSubdomain=kr">Mandovi Mukherjee*</a>,
-                              <a href="https://scholar.google.com/citations?user=5gRIUykAAAAJ&hl=en">Nael Mizanur Rahman*</a>,
-                              <a href="https://scholar.google.com/citations?user=gQu_Pa8AAAAJ&hl=en">Coleman B. DeLude*</a>,
-                              <a href="https://www.linkedin.com/in/coleman-delude-a9962480/">Joseph W. Driscoll*</a>,
-                              <a>Uday Kamal</a>,
-                              <a>Jongseok Woo</a>,
-                              <a>Jamin Seo</a>,
-                              <a>Sudarshan Sharma</a>,
-                              <a>Xiangyu Mao</a>,
-                              <a>Payman Behnam,</a>,
-                              <a>Sharjeel M. Khan</a>,
-                              <a>Daehyun Kim</a>,
-                              <b>Jianming Tong</b>,
-                              <a>Prachi Sinha</a>,
-                              <a>Santosh Pande</a>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
-                              <a>Justin Romberg</a>,
-                              <a>Madhavan Swaminathan</a>,
-                              and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
-                           </div>
-                           <div class="venue">
-                              <i>In Proc of IEEE Radar Conference, (<b style="color:#ff6600;">RadarConf</b>), May 2023.</i>
-                           </div>
-                           <div class="link">
-                              <b><a onclick="displayid('abs6');">[abstract]</a></b>
-                              <b><a href="https://ieeexplore.ieee.org/abstract/document/10149577">[paper]</a></b>
-                              <b><a onclick="displayid('bib6');">[bibtex]</a></b>
-                              <div id="abs6" style="display:none;">
-                                 A high performance architecture for emulating realtime radio frequency systems is presented. The architecture is developed based on a novel compute model and uses nearmemory techniques coupled with highly distributed autonomous control to simultaneously optimize throughput and minimize latency. A cycle level C++ based simulator is used to validate the proposed architecture with simulation of complex RF scenarios.
-                              </div>
-                              <div id="bib6" style="display:none;">
-                                 @INPROCEEDINGS{10149577,
-                                    author={Mukherjee, Mandovi and Rahman, Nael Mizanur and DeLude, Coleman and Driscoll, Joseph and Kamal, Uday and Woo, Jongseok and Seo, Jamin and Sharma, Sudarshan and Mao, Xiangyu and Behnam, Payman and Khan, Sharjeel and Kim, Daehyun and Tong, Jianming and Sinha, Prachi and Pande, Santosh and Krishna, Tushar and Romberg, Justin and Swaminathan, Madhavan and Mukhopadhyay, Saibal},
-                                    booktitle={2023 IEEE Radar Conference (RadarConf23)}, 
-                                    title={A High Performance Computing Architecture for Real-Time Digital Emulation of RF Interactions}, 
-                                    year={2023},
-                                    volume={},
-                                    number={},
-                                    pages={1-6},
-                                    doi={10.1109/RadarConf2351548.2023.10149577}}
-                              </div>
-                           </div>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/sushi_micro.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
+                                       <div class="title">
+                                          <b>On Continuing DNN Accelerator Architecture Scaling Using Tightly-coupled Compute-on-Memory 3D ICs</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://www.linkedin.com/in/gauthaman-murali-4110a732/">Gauthaman Murali</a>,
+                                          <a href="https://www.linkedin.com/in/adityaiyer99/">Aditya Iyer</a>,
+                                          <a href="https://www.linkedin.com/in/lingjunzhu/?locale=en_US">Lingjun Zhu</a>,
+                                          <b>Jianming Tong</b>,
+                                          <a href="https://www.linkedin.com/in/fr-munoz-mrtinez/?originalSubdomain=es">Francisco Munoz Martinez</a>,
+                                          <a href="https://www.linkedin.com/in/srivatsa-rangachar-srinivasa-8b0b4a130/">Srivatsa Rangachar Srinivasa</a>,
+                                          <a href="https://ieeexplore.ieee.org/author/37268291400">Tanay Karnik</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
+                                          <a href="https://ece.gatech.edu/directory/sung-kyu-lim">Sung Kyu Lim</a>
+                                       </div>
+                                       <div class="venue">
+                                          <i>IEEE Transactions on Very Large Scale Integration Systems (<b style="color:#ff6600;">TVLSI</b>), Jul 2023.</i>
+                                       </div>
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs9');">[abstract]</a></b>
+                                          <b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10221779">[paper]</a></b>
+                                          <!-- <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b> -->
+                                          <!-- <b><a href="publications/PAF_FHE_poster.pdf">[poster]</a></b> -->
+                                          <b><a onclick="displayid('bib9');">[bibtex]</a></b>
+                                          <div id="abs9" style="display:none;">
+                                             This work identifies the architectural and design scaling limits of 2D flexible interconnect DNN accelerators and addresses them with 3D ICs. We demonstrate how scaling up a baseline 2D accelerator in the X/Y dimension fails and how vertical stacking effectively overcomes the failure. We designed multi-tier accelerators that are 1.67X faster than the 2D design. Using our 3D architecture and circuit co-design methodology, we improve throughput, energy-efficiency, and area-efficiency by up to 5X, 1.2X, and 3.9X, respectively, over 2D counterparts. The IR-drop in our 3D designs is within 10.7% of VDD, and the temperature variation is within 12˚C.
+                                          </div>
+                                          <div id="bib9" style="display:none;">
+                                             @ARTICLE{10221779,
+                                                author={Murali, Gauthaman and Iyer, Aditya and Zhu, Lingjun and Tong, Jianming and Martínez, Francisco Muñoz and Srinivasa, Srivatsa Rangachar and Karnik, Tanay and Krishna, Tushar and Lim, Sung Kyu},
+                                                journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems}, 
+                                                title={On Continuing DNN Accelerator Architecture Scaling Using Tightly Coupled Compute-on-Memory 3-D ICs}, 
+                                                year={2023},
+                                                volume={},
+                                                number={},
+                                                pages={1-11},
+                                                doi={10.1109/TVLSI.2023.3299564}}
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </td>
                      </tr>
 
+
                      <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>A Configurable Architecture for Efficient Sparse FIR Computation in Real-time Radio Frequency Systems</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://www.linkedin.com/in/jamin-seo-8aba1a13b/?originalSubdomain=kr">Jamin Seo</a>,
-                              <a href="https://scholar.google.com/citations?user=5gRIUykAAAAJ&hl=en">Nael Mizanur Rahman</a>,
-                              <a href="https://scholar.google.com/citations?user=gQu_Pa8AAAAJ&hl=en">Mandovi Mukherjee</a>,
-                              <a href="https://www.linkedin.com/in/coleman-delude-a9962480/">Coleman DeLude</a>,
-                              <b>Jianming Tong</b>,
-                              <a href="https://jrom.ece.gatech.edu/">Justin Romberg</a>,
-                              <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
-                              and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
-                           </div>
-                           <div class="venue">
-                              <i>International Microwave Symposium (<b style="color:#ff6600;">IMS</b>), 2021.</i>
-                           </div>
-                           <!-- <div class="insight">
-                              <i> <b> Insight 1: </b> Large-scale crossbar is implementation-prohibitive for long wires.</i> <br>
-                              <i> <b> Insight 2: </b> Using multi-stage interconnection to achieve function as crossbar could reduce half number of long wires and save power and area.</i>
-                           </div> -->
-                           <div class="link">
-                              <b><a onclick="displayid('abs5');">[abstract]</a></b>
-                              <b><a href="https://ieeexplore.ieee.org/abstract/document/9865486">[paper]</a></b>
-                              <b><a onclick="displayid('bib5');">[bibtex]</a></b>
-                              <div id="abs5" style="display:none;">
-                                 A  low-latency and high-throughput, configurable architecture for computing sparse Finite Impulse Response in real-time Radio Frequency domain is proposed. The massively parallel architecture uses distributed control in association with near-memory techniques to optimize area and power. It supports configurability in filter tap locations and handling of locally dense taps, making it more adaptable to Radio Frequency environments.
-                              </div>
-                              <div id="bib5" style="display:none;">
-                                 @INPROCEEDINGS{9865486,
-                                    author={Seo, Jamin and Mukherjee, Mandovi and Rahman, Nael Mizanur and Tong, Jianming and DeLude, Coleman and Krishna, Tushar and Romberg, Justin and Mukhopadhyay, Saibal},
-                                    booktitle={2022 IEEE/MTT-S International Microwave Symposium - IMS 2022}, 
-                                    title={A Configurable Architecture for Efficient Sparse FIR Computation in Real-time Radio Frequency Systems}, 
-                                    year={2022},
-                                    volume={},
-                                    number={},
-                                    pages={998-1001},
-                                    doi={10.1109/IMS37962.2022.9865486}}
-                              </div>
-                           </div>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/sushi.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
+                                       <div class="title">
+                                          <b>SUSHI: SUbgraph Stationary Hardware-software Inference Co-design</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://paymanbehnam.com/">Payman Behnam*</a>,
+                                          <b>Jianming Tong*</b>,
+                                          <a href="https://www.cc.gatech.edu/~akhare39/">Alind Khare</a>,
+                                          <a href="https://www.linkedin.com/in/yangyu-chen/">Yangyu Chen</a>,
+                                          <a href="https://www.linkedin.com/in/yue-pan-061439192/">Yue Pan</a>,
+                                          <a href="https://www.linkedin.com/in/abhimanyu-bambhaniya/">Abhimanyu Bambhaniya</a>,
+                                          <a>Pranav Gadikar</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>, and
+                                          <a href="https://www.cc.gatech.edu/~atumanov/">Alexey Tumanov</a>
+                                       </div>
+                                       <div class="venue">
+                                          <i>In Proc of Sixth Conference on Machine Learning and Systems (<b style="color:#ff6600;">MLSys</b>), Jun 2023.</i>
+                                       </div>
+                                       <div> 
+                                          <i><b style="color:#ff6600;">++Qualcomm Innovation Fellowship</b></i>
+                                       </div>
+                                       <div> 
+                                          <i><b style="color:#ff6600;">++Best Poster Award (IAP2023@MIT)</b></i>
+                                       </div>
+                                       <!-- <div class="insight">
+                                          <i> <b> Insight 1: </b> Weights-sharing neural network enables a dynamic latency-accuracy serving.</i> <br>
+                                          <i> <b> Insight 2: </b> Putting common weights on-chip (Subgraph Stationary) could save off-chip data access latency and thus push model towards computattion-bound.</i>
+                                       </div> -->
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs7');">[abstract]</a></b>
+                                          <b><a href="https://arxiv.org/abs/2306.17266">[paper]</a></b>
+                                          <b><a onclick="displayid('bib7');">[bibtex]</a></b>
+                                          <div id="abs7" style="display:none;">
+                                             A growing number of applications depend on Machine Learning (ML) functionality and benefits from both higher quality ML predictions and better timeliness (latency) at the same time. A growing body of research in computer architecture, ML, and systems software literature focuses on reaching better latency/accuracy tradeoffs for ML models. Efforts include compression, quantization, pruning, early-exit models, mixed DNN precision, as well as ML inference accelerator designs that minimize latency and energy, while preserving delivered accuracy. All of them, however, yield improvements for a single static point in the latency/accuracy tradeoff space. We make a case for applications that operate in dynamically changing deployment scenarios, where no single static point is optimal. We draw on a recently proposed weight-shared SuperNet mechanism to enable serving a stream of queries that uses (activates) different SubNets within this weight-shared construct. This creates an opportunity to exploit the inherent temporal locality with our proposed SubGraph Stationary (SGS) optimization. We take a hardware-software co-design approach with a real implementation of SGS in SushiAccel and the implementation of a software scheduler SushiSched controlling which SubNets to serve and what to cache in real-time. Combined, they are vertically integrated into SUSHI---an inference serving stack. For the stream of queries, SUSHI yields up to 25% improvement in latency, 0.98% increase in served accuracy. SUSHI can achieve up to 78.7% off-chip energy savings.
+                                          </div>
+                                          <div id="bib7" style="display:none;">
+                                             @misc{behnam2023subgraph,
+                                                title={Subgraph Stationary Hardware-Software Inference Co-Design}, 
+                                                author={Payman Behnam and Jianming Tong and Alind Khare and Yangyu Chen and Yue Pan and Pranav Gadikar and Abhimanyu Rajeshkumar Bambhaniya and Tushar Krishna and Alexey Tumanov},
+                                                year={2023},
+                                                eprint={2306.17266},
+                                                archivePrefix={arXiv},
+                                                primaryClass={cs.DC}
+                                             }
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </td>
                      </tr>
 
-                     <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>ac2SLAM: FPGA Accelerated High-Accuracy SLAM with Heapsort and Parallel Keypoint Extractor</b>
-                           </div>
-                           <div class="authors">
-                              <a>Cheng Wang</a>,
-                              <a>Yinkun Liu</a>,
-                              <a>Kedai Zuo</a>,
-                              <b>Jianming Tong</b>,
-                              <a >Yan Ding</a>,
-                              and <a href="http://gr.xjtu.edu.cn/web/pengjuren">Pengju Ren</a>.<br>
-                           </div>
-                           <div class="venue">
-
-                              <i>International Conference on Field-Programmable Technology (<b style="color:#ff6600;">FPT</b>), 2021.</i> <b>Full Paper</b>
-                           </div>
-                           <!-- <div class="insight">
-                              <i> <b> Insight 1: </b> Back-end optimization is latency bottleneck in SLAM for large map, and it comes with great parallelism suitable for hardware acceleration.</i> <br>
-                              <i> <b> Insight 2: </b> Leveraging parallelism in front-end feature extractions could achieve 4.55X, 40X speedup than eSLAM and CPU.</i>
-                           </div> -->
-                           <div class="links">
-                              <b><a onclick="displayid('abs4');">[abstract]</a></b>
-                              <b><a href="https://ieeexplore.ieee.org/abstract/document/9609808">[paper]</a></b>
-                              <b><a href="https://github.com/SLAM-Hardware/acSLAM">[code]</a></b>
-                              <b><a onclick="displayid('bib4');">[bibtex]</a></b>
-                              <div id="abs4" style="display:none;">
-                                 In order to fulfill the rich functions of the application layer, robust and accurate Simultaneous Localization and Mapping (SLAM) technique is very critical for robotics. However, due to the lack of sufficient computing power and storage capacity, it is challenging to delpoy high-accuracy SLAM in embedded devices efficiently. In this work, we propose a complete acceleration scheme, termed ac 2 SLAM, based on the ORB-SLAM2 algorithm including both front and back ends, and implement it on an FPGA platform. Specifically, the proposed ac 2 SLAM features with: 1) a scalable and parallel ORB extractor to extract sufficient keypoints and scores for throughput matching with 4% error, 2) a PingPong heapsort component (pp-heapsort) to select the significant keypoints, that could achieve single-cycle initiation interval to reduce the amount of data transfer between accelerator and the host CPU, and 3) the potential parallel acceleration strategies for the back-end optimization. Compared with running ORB-SLAM2 on the ARM processor, ac 2 SLAM achieves 2.1 × and 2.7 × faster in the TUM and KITTI datasets, while maintaining 10% error of SOTA eSLAM. In addition, the FPGA accelerated front-end achieves 4.55 × and 40 × faster than eSLAM and ARM. The ac 2 SLAM is fully open-sourced at https://github.com/SLAM-Hardware/acSLAM.
-                              </div>
-                              <div id="bib4" style="display:none;">
-                                 @INPROCEEDINGS{9609808,
-                                    author={Wang, Cheng and Liu, Yingkun and Zuo, Kedai and Tong, Jianming and Ding, Yan and Ren, Pengju},
-                                    booktitle={2021 International Conference on Field-Programmable Technology (ICFPT)}, 
-                                    title={ac2SLAM: FPGA Accelerated High-Accuracy SLAM with Heapsort and Parallel Keypoint Extractor}, 
-                                    year={2021},
-                                    volume={},
-                                    number={},
-                                    pages={1-9},
-                                    doi={10.1109/ICFPT52863.2021.9609808}}
-                              </div>
-                           </div>
-                        </td>
-                     </tr>
-                     
-                     <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>SMMR-explore: Submap-based multi-robot exploration system with multi-robot multi-target potential field exploration method</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://nicsefc.ee.tsinghua.edu.cn/people/yujinchengyu/">Jincheng Yu*</a>,
-                              <b> Jianming Tong*</b>,
-                              <a href="https://scholar.google.com/citations?user=gOuB4zQAAAAJ&hl=en">Yuanfan Xu</a>,
-                              <a href="https://nicsefc.ee.tsinghua.edu.cn/people/zhilin-xu/">Zhilin Xu</a>,
-                              <a href="http://nicsefc.ee.tsinghua.edu.cn/people/donghl17/">Haolin Dong</a>,
-                              <a href="http://nicsefc.ee.tsinghua.edu.cn/people/tianxiang-yang/">Tianxiang Yang</a>, and
-                              <a href="http://nicsefc.ee.tsinghua.edu.cn/people/yu-wang/">Yu Wang</a>.<br>
-                           </div>
-                           <div class="venue">
-                              <i>IEEE International Conference on Robotics and Automation (<b style="color:#ff6600;">ICRA</b>), 2021.</i> <b>Oral</b>
-                           </div>
-                           <div class="links">
-                              <b><a onclick="displayid('abs3');">[abstract]</a></b>
-                              <b><a href="https://ieeexplore.ieee.org/document/9561328">[paper]</a></b>
-                              <b><a href="https://github.com/efc-robot/SMMR-Explore">[code]</a></b>
-                              <!-- <b><a href="https://www.youtube.com/watch?v=H1zwRIz8OYs">[demo]</a></b> -->
-                              <b><a onclick="displayid('demo3');">[demo]</a></b>
-                              <b><a onclick="displayid('bib3');">[bibtex]</a></b>
-                              <div id="abs3" style="display:none;">
-                                 Collaborative exploration in an unknown environment without external positioning under limited communication is an essential task for multi-robot applications. For inter-robot positioning, various Distributed Simultaneous Localization and Mapping (DSLAM) systems share the Place Recognition (PR) descriptors and sensor data to estimate the relative pose between robots and merge robots’ maps. As maps are constantly shared among robots in exploration, we design a map-based DSLAM framework, which only shares the submaps, eliminating the transfer of PR descriptors and sensor data. Our framework saves 30% of total communication traffic. For exploration, each robot is assigned to get much unknown information about environments with paying little travel cost. As the number of sampled points increases, the goal would change back and forth among sampled frontiers, leading to the downgrade in exploration efficiency and the overlap of trajectories. We propose an exploration strategy based on Multi-robot Multi-target Potential Field (MMPF), which can eliminate goal’s back-and-forth changes, boosting the exploration efficiency by 1.03 ×∼1.62 × with 3 % ∼ 40 % travel cost saved. Our SubMap-based Multi-robot Exploration method (SMMR-Explore) is evaluated on both Gazebo simulator and real robots. The simulator and the exploration framework are published as an open-source ROS project at https://github.com/efc-robot/SMMR-Explore.
-                              </div>
-                              <div id="bib3" style="display:none;">
-                                 @INPROCEEDINGS{9561328,
-                                    author={Yu, Jincheng and Tong, Jianming and Xu, Yuanfan and Xu, Zhilin and Dong, Haolin and Yang, Tianxiang and Wang, Yu},
-                                    booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)}, 
-                                    title={SMMR-Explore: SubMap-based Multi-Robot Exploration System with Multi-robot Multi-target Potential Field Exploration Method}, 
-                                    year={2021},
-                                    volume={},
-                                    number={},
-                                    pages={8779-8785},
-                                    doi={10.1109/ICRA48506.2021.9561328}}
-                              </div>
-                              <div id="demo3" style="display:none;">
-                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/H1zwRIz8OYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                              </div>
-                           </div>
-                        </td>
-                     </tr>
 
                      <tr>
-                        <td width="60%" valign="middle">
-                           <div class="title">
-                              <b>PIT: Processing-In-Transmission with Fine-Grained Data Manipulation Networks</b>
-                           </div>
-                           <div class="authors">
-                              <a href="https://www.researchgate.net/profile/Pengchen-Zong"> Pengchen Zong*</a>,
-                              <a href="https://scholar.google.com/citations?hl=en&user=IHUKbtAAAAAJ"> Tian Xia*</a>,
-                              <a href="https://scholar.google.com/citations?hl=zh-CN&user=3onwdYsAAAAJ"> Haoran Zhao</a>,
-                              <b> Jianming Tong</b>,
-                              <a> Zehua Li</a>,
-                              <a href="https://www.linkedin.com/in/wenzhe-zhao-6b273779/?originalSubdomain=cn"> Wenzhe Zhao</a>,
-                              <a href="https://scholar.google.com.hk/citations?user=iqMe3p8AAAAJ&hl=zh-CN">Nanning Zheng</a>, and
-                              <a href="http://gr.xjtu.edu.cn/web/pengjuren">Pengju Ren</a>.<br>
-                           </div>
-                           <div class="venue">
-                              <i> IEEE Transactions on Computers (<b  style="color:#ff6600;">TOC</b>), 2021.</i>
-                           </div>
-                           <div class="links">
-                              <b><a onclick="displayid('abs2');">[abstract]</a></b>
-                              <b><a href="https://ieeexplore.ieee.org/abstract/document/9311185/">[paper]</a></b>
-                              <b><a onclick="displayid('bib2');">[bibtex]</a></b>
-                              <div id="abs2" style="display:none;">
-                                 In the domain of data parallel computation, most works focus on data flow optimization inside the PE array and favorable memory hierarchy to pursue the maximum parallelism and efficiency, while the importance of data contents has been overlooked for a long time. As we observe, for structured data, insights on the contents (i.e., their values and locations within a structured form) can greatly benefit the computation performance, as fine-grained data manipulation can be performed. In this paper, we claim that by providing a flexible and adaptive data path, an efficient architecture with capability of fine-grained data manipulation can be built. Specifically, we design SOM, a portable and highly-adaptive data transmission network, with the capability of operand sorting, non-blocking self-route ordering and multicasting. Based on SOM, we propose the processing-in-transmission architecture (PITA), which extends the traditional SIMD architecture to perform some fundamental data processing during its transmission, by embedding multiple levels of SOM networks on the data path. We evaluate the performance of PITA in two irregular computation problems. We first map the matrix inversion task onto PITA and show considerable performance gain can be achieved, resulting in 3x-20x speedup against Intel MKL, and 20x-40x against cuBLAS. Then we evaluate our PITA on sparse CNNs. The results indicate that PITA can greatly improve computation efficiency and reduce memory bandwidth pressure. We achieved 2x-9x speedup against several state-of-art accelerators on sparse CNN, where nearly 100 percent PE efficiency is maintained under high sparsity. We believe the concept of PIT is a promising computing paradigm that can enlarge the capability of traditional parallel architecture.
-                              </div>
-                              <div id="bib2" style="display:none;">
-                                 @ARTICLE{9311185,
-                                    author={Zong, Pengchen and Xia, Tian and Zhao, Haoran and Tong, Jianming and Li, Zehua and Zhao, Wenzhe and Zheng, Nanning and Ren, Pengju},
-                                    journal={IEEE Transactions on Computers}, 
-                                    title={PIT: Processing-In-Transmission With Fine-Grained Data Manipulation Networks}, 
-                                    year={2021},
-                                    volume={70},
-                                    number={6},
-                                    pages={877-891},
-                                    doi={10.1109/TC.2020.3048233}}
-                              </div>
-                           </div>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/mao.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
+                                       <div class="title">
+                                          <b>FPGA-Based High-Performance Real-Time Emulation of Radar System using Direct Path Compute Model</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a>Xiangyu Mao*</a>,
+                                          <a href="https://www.linkedin.com/in/jamin-seo-8aba1a13b/?originalSubdomain=kr">Mandovi Mukherjee*</a>,
+                                          <a href="https://scholar.google.com/citations?user=5gRIUykAAAAJ&hl=en">Nael Mizanur Rahman*</a>,
+                                          <a>Uday Kamal</a>,
+                                          <a>Sudarshan Sharma</a>,
+                                          <a>Payman Behnam</a>,
+                                          <b>Jianming Tong</b>,
+                                          <a>Jongseok Woo</a>,
+                                          <a>Coleman B DeLude</a>,
+                                          <a>Joseph W. Driscoll</a>,
+                                          <a>Jamin Seo</a>,
+                                          <a>Santosh Pande</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
+                                          <a>Justin Romberg</a>,
+                                          <a>Madhavan Swaminathan</a>,
+                                          and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
+                                       </div>
+                                       <div class="venue">
+                                          <i>International Microwave Symposium (<b style="color:#ff6600;">IMS</b>), Jun 2023.</i>
+                                       </div>
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs7');">[abstract]</a></b>
+                                          <b><a href="https://ieeexplore.ieee.org/document/10187950">[paper]</a></b>
+                                          <b><a onclick="displayid('bib7');">[bibtex]</a></b>
+                                          <div id="abs7" style="display:none;">
+                                             This paper proposes a Field-Programmable Gate Array (FPGA) based platform for real-time emulation of Radio Frequency (RF) signal interactions among radars and reflectors. Unlike conventional tapped-delay Finite-Impulse-Response (FIR) models, the paper presents an FPGA realization of Direct Path Compute model for RF signal propagation. Experimental results on a Xilinx ZCU104 board demonstrate a 5-platform system of the emulation range of 2.78km to 27.3km at 180 MHz bandwidth.
+                                          </div>
+                                          <div id="bib7" style="display:none;">
+                                             @INPROCEEDINGS{10187950,
+                                                author={Mao, X. and Mukherjee, M. and Rahman, N. M. and Kamal, U. and Sharma, S. and Behnam, P. and Tong, J. and Driscoll, J. and Krishna, T. and Romberg, J. and Mukhopadhyay, S.},
+                                                booktitle={2023 IEEE/MTT-S International Microwave Symposium - IMS 2023}, 
+                                                title={FPGA-Based High-Performance Real-Time Emulation of Radar System Using Direct Path Compute Model}, 
+                                                year={2023},
+                                                volume={},
+                                                number={},
+                                                pages={419-422},
+                                                keywords={Radio frequency;Microwave measurement;Computational modeling;Emulation;RF signals;Radar;Bandwidth;RF emulation;direct path compute model;FPGA;real-time},
+                                                doi={10.1109/IMS37964.2023.10187950}}
+                                              
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
                         </td>
                      </tr>
 
@@ -625,12 +526,304 @@
                            <table>
                               <tbody>
                                  <tr>
-                                    <!-- <td width="10%">
-                                       <img src="./images/georgia_tech.png" width="105%" style="display: block;
+                                    <td width="30%">
+                                       <img src="./images/mandovi.png" width="95%" style="display: block;
                                        margin-left: auto; margin-left:
                                        auto;">
-                                    </td> -->
-                                    <td width="100%">
+                                    </td>
+                                    <td width="65%">
+                                       <div class="title">
+                                          <b>A High Performance Computing Architecture for Real-Time Digital Emulation of RF Interactions</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://www.linkedin.com/in/jamin-seo-8aba1a13b/?originalSubdomain=kr">Mandovi Mukherjee*</a>,
+                                          <a href="https://scholar.google.com/citations?user=5gRIUykAAAAJ&hl=en">Nael Mizanur Rahman*</a>,
+                                          <a href="https://scholar.google.com/citations?user=gQu_Pa8AAAAJ&hl=en">Coleman B. DeLude*</a>,
+                                          <a href="https://www.linkedin.com/in/coleman-delude-a9962480/">Joseph W. Driscoll*</a>,
+                                          <a>Uday Kamal</a>,
+                                          <a>Jongseok Woo</a>,
+                                          <a>Jamin Seo</a>,
+                                          <a>Sudarshan Sharma</a>,
+                                          <a>Xiangyu Mao</a>,
+                                          <a>Payman Behnam,</a>,
+                                          <a>Sharjeel M. Khan</a>,
+                                          <a>Daehyun Kim</a>,
+                                          <b>Jianming Tong</b>,
+                                          <a>Prachi Sinha</a>,
+                                          <a>Santosh Pande</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
+                                          <a>Justin Romberg</a>,
+                                          <a>Madhavan Swaminathan</a>,
+                                          and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
+                                       </div>
+                                       <div class="venue">
+                                          <i>In Proc of IEEE Radar Conference, (<b style="color:#ff6600;">RadarConf</b>), May 2023.</i>
+                                       </div>
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs6');">[abstract]</a></b>
+                                          <b><a href="https://ieeexplore.ieee.org/abstract/document/10149577">[paper]</a></b>
+                                          <b><a onclick="displayid('bib6');">[bibtex]</a></b>
+                                          <div id="abs6" style="display:none;">
+                                             A high performance architecture for emulating realtime radio frequency systems is presented. The architecture is developed based on a novel compute model and uses nearmemory techniques coupled with highly distributed autonomous control to simultaneously optimize throughput and minimize latency. A cycle level C++ based simulator is used to validate the proposed architecture with simulation of complex RF scenarios.
+                                          </div>
+                                          <div id="bib6" style="display:none;">
+                                             @INPROCEEDINGS{10149577,
+                                                author={Mukherjee, Mandovi and Rahman, Nael Mizanur and DeLude, Coleman and Driscoll, Joseph and Kamal, Uday and Woo, Jongseok and Seo, Jamin and Sharma, Sudarshan and Mao, Xiangyu and Behnam, Payman and Khan, Sharjeel and Kim, Daehyun and Tong, Jianming and Sinha, Prachi and Pande, Santosh and Krishna, Tushar and Romberg, Justin and Swaminathan, Madhavan and Mukhopadhyay, Saibal},
+                                                booktitle={2023 IEEE Radar Conference (RadarConf23)}, 
+                                                title={A High Performance Computing Architecture for Real-Time Digital Emulation of RF Interactions}, 
+                                                year={2023},
+                                                volume={},
+                                                number={},
+                                                pages={1-6},
+                                                doi={10.1109/RadarConf2351548.2023.10149577}}
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/jamin.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
+                                       <div class="title">
+                                          <b>A Configurable Architecture for Efficient Sparse FIR Computation in Real-time Radio Frequency Systems</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://www.linkedin.com/in/jamin-seo-8aba1a13b/?originalSubdomain=kr">Jamin Seo</a>,
+                                          <a href="https://scholar.google.com/citations?user=5gRIUykAAAAJ&hl=en">Nael Mizanur Rahman</a>,
+                                          <a href="https://scholar.google.com/citations?user=gQu_Pa8AAAAJ&hl=en">Mandovi Mukherjee</a>,
+                                          <a href="https://www.linkedin.com/in/coleman-delude-a9962480/">Coleman DeLude</a>,
+                                          <b>Jianming Tong</b>,
+                                          <a href="https://jrom.ece.gatech.edu/">Justin Romberg</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
+                                          and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
+                                       </div>
+                                       <div class="venue">
+                                          <i>International Microwave Symposium (<b style="color:#ff6600;">IMS</b>), 2021.</i>
+                                       </div>
+                                       <!-- <div class="insight">
+                                          <i> <b> Insight 1: </b> Large-scale crossbar is implementation-prohibitive for long wires.</i> <br>
+                                          <i> <b> Insight 2: </b> Using multi-stage interconnection to achieve function as crossbar could reduce half number of long wires and save power and area.</i>
+                                       </div> -->
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs5');">[abstract]</a></b>
+                                          <b><a href="https://ieeexplore.ieee.org/abstract/document/9865486">[paper]</a></b>
+                                          <b><a onclick="displayid('bib5');">[bibtex]</a></b>
+                                          <div id="abs5" style="display:none;">
+                                             A  low-latency and high-throughput, configurable architecture for computing sparse Finite Impulse Response in real-time Radio Frequency domain is proposed. The massively parallel architecture uses distributed control in association with near-memory techniques to optimize area and power. It supports configurability in filter tap locations and handling of locally dense taps, making it more adaptable to Radio Frequency environments.
+                                          </div>
+                                          <div id="bib5" style="display:none;">
+                                             @INPROCEEDINGS{9865486,
+                                                author={Seo, Jamin and Mukherjee, Mandovi and Rahman, Nael Mizanur and Tong, Jianming and DeLude, Coleman and Krishna, Tushar and Romberg, Justin and Mukhopadhyay, Saibal},
+                                                booktitle={2022 IEEE/MTT-S International Microwave Symposium - IMS 2022}, 
+                                                title={A Configurable Architecture for Efficient Sparse FIR Computation in Real-time Radio Frequency Systems}, 
+                                                year={2022},
+                                                volume={},
+                                                number={},
+                                                pages={998-1001},
+                                                doi={10.1109/IMS37962.2022.9865486}}
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/acslam.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
+                                       <div class="title">
+                                          <b>ac2SLAM: FPGA Accelerated High-Accuracy SLAM with Heapsort and Parallel Keypoint Extractor</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a>Cheng Wang</a>,
+                                          <a>Yinkun Liu</a>,
+                                          <a>Kedai Zuo</a>,
+                                          <b>Jianming Tong</b>,
+                                          <a >Yan Ding</a>,
+                                          and <a href="http://gr.xjtu.edu.cn/web/pengjuren">Pengju Ren</a>.<br>
+                                       </div>
+                                       <div class="venue">
+            
+                                          <i>International Conference on Field-Programmable Technology (<b style="color:#ff6600;">FPT</b>), 2021.</i> <b>Full Paper</b>
+                                       </div>
+                                       <!-- <div class="insight">
+                                          <i> <b> Insight 1: </b> Back-end optimization is latency bottleneck in SLAM for large map, and it comes with great parallelism suitable for hardware acceleration.</i> <br>
+                                          <i> <b> Insight 2: </b> Leveraging parallelism in front-end feature extractions could achieve 4.55X, 40X speedup than eSLAM and CPU.</i>
+                                       </div> -->
+                                       <div class="links">
+                                          <b><a onclick="displayid('abs4');">[abstract]</a></b>
+                                          <b><a href="https://ieeexplore.ieee.org/abstract/document/9609808">[paper]</a></b>
+                                          <b><a href="https://github.com/SLAM-Hardware/acSLAM">[code]</a></b>
+                                          <b><a onclick="displayid('bib4');">[bibtex]</a></b>
+                                          <div id="abs4" style="display:none;">
+                                             In order to fulfill the rich functions of the application layer, robust and accurate Simultaneous Localization and Mapping (SLAM) technique is very critical for robotics. However, due to the lack of sufficient computing power and storage capacity, it is challenging to delpoy high-accuracy SLAM in embedded devices efficiently. In this work, we propose a complete acceleration scheme, termed ac 2 SLAM, based on the ORB-SLAM2 algorithm including both front and back ends, and implement it on an FPGA platform. Specifically, the proposed ac 2 SLAM features with: 1) a scalable and parallel ORB extractor to extract sufficient keypoints and scores for throughput matching with 4% error, 2) a PingPong heapsort component (pp-heapsort) to select the significant keypoints, that could achieve single-cycle initiation interval to reduce the amount of data transfer between accelerator and the host CPU, and 3) the potential parallel acceleration strategies for the back-end optimization. Compared with running ORB-SLAM2 on the ARM processor, ac 2 SLAM achieves 2.1 × and 2.7 × faster in the TUM and KITTI datasets, while maintaining 10% error of SOTA eSLAM. In addition, the FPGA accelerated front-end achieves 4.55 × and 40 × faster than eSLAM and ARM. The ac 2 SLAM is fully open-sourced at https://github.com/SLAM-Hardware/acSLAM.
+                                          </div>
+                                          <div id="bib4" style="display:none;">
+                                             @INPROCEEDINGS{9609808,
+                                                author={Wang, Cheng and Liu, Yingkun and Zuo, Kedai and Tong, Jianming and Ding, Yan and Ren, Pengju},
+                                                booktitle={2021 International Conference on Field-Programmable Technology (ICFPT)}, 
+                                                title={ac2SLAM: FPGA Accelerated High-Accuracy SLAM with Heapsort and Parallel Keypoint Extractor}, 
+                                                year={2021},
+                                                volume={},
+                                                number={},
+                                                pages={1-9},
+                                                doi={10.1109/ICFPT52863.2021.9609808}}
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/icra.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
+                                       <div class="title">
+                                          <b>SMMR-explore: Submap-based multi-robot exploration system with multi-robot multi-target potential field exploration method</b>
+                                       </div>
+                                       <div class="authors">
+                                          <a href="https://nicsefc.ee.tsinghua.edu.cn/people/yujinchengyu/">Jincheng Yu*</a>,
+                                          <b> Jianming Tong*</b>,
+                                          <a href="https://scholar.google.com/citations?user=gOuB4zQAAAAJ&hl=en">Yuanfan Xu</a>,
+                                          <a href="https://nicsefc.ee.tsinghua.edu.cn/people/zhilin-xu/">Zhilin Xu</a>,
+                                          <a href="http://nicsefc.ee.tsinghua.edu.cn/people/donghl17/">Haolin Dong</a>,
+                                          <a href="http://nicsefc.ee.tsinghua.edu.cn/people/tianxiang-yang/">Tianxiang Yang</a>, and
+                                          <a href="http://nicsefc.ee.tsinghua.edu.cn/people/yu-wang/">Yu Wang</a>.<br>
+                                       </div>
+                                       <div class="venue">
+                                          <i>IEEE International Conference on Robotics and Automation (<b style="color:#ff6600;">ICRA</b>), 2021.</i> <b>Oral</b>
+                                       </div>
+                                       <div class="links">
+                                          <b><a onclick="displayid('abs3');">[abstract]</a></b>
+                                          <b><a href="https://ieeexplore.ieee.org/document/9561328">[paper]</a></b>
+                                          <b><a href="https://github.com/efc-robot/SMMR-Explore">[code]</a></b>
+                                          <!-- <b><a href="https://www.youtube.com/watch?v=H1zwRIz8OYs">[demo]</a></b> -->
+                                          <b><a onclick="displayid('demo3');">[demo]</a></b>
+                                          <b><a onclick="displayid('bib3');">[bibtex]</a></b>
+                                          <div id="abs3" style="display:none;">
+                                             Collaborative exploration in an unknown environment without external positioning under limited communication is an essential task for multi-robot applications. For inter-robot positioning, various Distributed Simultaneous Localization and Mapping (DSLAM) systems share the Place Recognition (PR) descriptors and sensor data to estimate the relative pose between robots and merge robots’ maps. As maps are constantly shared among robots in exploration, we design a map-based DSLAM framework, which only shares the submaps, eliminating the transfer of PR descriptors and sensor data. Our framework saves 30% of total communication traffic. For exploration, each robot is assigned to get much unknown information about environments with paying little travel cost. As the number of sampled points increases, the goal would change back and forth among sampled frontiers, leading to the downgrade in exploration efficiency and the overlap of trajectories. We propose an exploration strategy based on Multi-robot Multi-target Potential Field (MMPF), which can eliminate goal’s back-and-forth changes, boosting the exploration efficiency by 1.03 ×∼1.62 × with 3 % ∼ 40 % travel cost saved. Our SubMap-based Multi-robot Exploration method (SMMR-Explore) is evaluated on both Gazebo simulator and real robots. The simulator and the exploration framework are published as an open-source ROS project at https://github.com/efc-robot/SMMR-Explore.
+                                          </div>
+                                          <div id="bib3" style="display:none;">
+                                             @INPROCEEDINGS{9561328,
+                                                author={Yu, Jincheng and Tong, Jianming and Xu, Yuanfan and Xu, Zhilin and Dong, Haolin and Yang, Tianxiang and Wang, Yu},
+                                                booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)}, 
+                                                title={SMMR-Explore: SubMap-based Multi-Robot Exploration System with Multi-robot Multi-target Potential Field Exploration Method}, 
+                                                year={2021},
+                                                volume={},
+                                                number={},
+                                                pages={8779-8785},
+                                                doi={10.1109/ICRA48506.2021.9561328}}
+                                          </div>
+                                          <div id="demo3" style="display:none;">
+                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/H1zwRIz8OYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/PIT.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
+                                    <div class="title">
+                                       <b>PIT: Processing-In-Transmission with Fine-Grained Data Manipulation Networks</b>
+                                    </div>
+                                    <div class="authors">
+                                       <a href="https://www.researchgate.net/profile/Pengchen-Zong"> Pengchen Zong*</a>,
+                                       <a href="https://scholar.google.com/citations?hl=en&user=IHUKbtAAAAAJ"> Tian Xia*</a>,
+                                       <a href="https://scholar.google.com/citations?hl=zh-CN&user=3onwdYsAAAAJ"> Haoran Zhao</a>,
+                                       <b> Jianming Tong</b>,
+                                       <a> Zehua Li</a>,
+                                       <a href="https://www.linkedin.com/in/wenzhe-zhao-6b273779/?originalSubdomain=cn"> Wenzhe Zhao</a>,
+                                       <a href="https://scholar.google.com.hk/citations?user=iqMe3p8AAAAJ&hl=zh-CN">Nanning Zheng</a>, and
+                                       <a href="http://gr.xjtu.edu.cn/web/pengjuren">Pengju Ren</a>.<br>
+                                    </div>
+                                    <div class="venue">
+                                       <i> IEEE Transactions on Computers (<b  style="color:#ff6600;">TOC</b>), 2021.</i>
+                                    </div>
+                                    <div class="links">
+                                       <b><a onclick="displayid('abs2');">[abstract]</a></b>
+                                       <b><a href="https://ieeexplore.ieee.org/abstract/document/9311185/">[paper]</a></b>
+                                       <b><a onclick="displayid('bib2');">[bibtex]</a></b>
+                                       <div id="abs2" style="display:none;">
+                                          In the domain of data parallel computation, most works focus on data flow optimization inside the PE array and favorable memory hierarchy to pursue the maximum parallelism and efficiency, while the importance of data contents has been overlooked for a long time. As we observe, for structured data, insights on the contents (i.e., their values and locations within a structured form) can greatly benefit the computation performance, as fine-grained data manipulation can be performed. In this paper, we claim that by providing a flexible and adaptive data path, an efficient architecture with capability of fine-grained data manipulation can be built. Specifically, we design SOM, a portable and highly-adaptive data transmission network, with the capability of operand sorting, non-blocking self-route ordering and multicasting. Based on SOM, we propose the processing-in-transmission architecture (PITA), which extends the traditional SIMD architecture to perform some fundamental data processing during its transmission, by embedding multiple levels of SOM networks on the data path. We evaluate the performance of PITA in two irregular computation problems. We first map the matrix inversion task onto PITA and show considerable performance gain can be achieved, resulting in 3x-20x speedup against Intel MKL, and 20x-40x against cuBLAS. Then we evaluate our PITA on sparse CNNs. The results indicate that PITA can greatly improve computation efficiency and reduce memory bandwidth pressure. We achieved 2x-9x speedup against several state-of-art accelerators on sparse CNN, where nearly 100 percent PE efficiency is maintained under high sparsity. We believe the concept of PIT is a promising computing paradigm that can enlarge the capability of traditional parallel architecture.
+                                       </div>
+                                       <div id="bib2" style="display:none;">
+                                          @ARTICLE{9311185,
+                                             author={Zong, Pengchen and Xia, Tian and Zhao, Haoran and Tong, Jianming and Li, Zehua and Zhao, Wenzhe and Zheng, Nanning and Ren, Pengju},
+                                             journal={IEEE Transactions on Computers}, 
+                                             title={PIT: Processing-In-Transmission With Fine-Grained Data Manipulation Networks}, 
+                                             year={2021},
+                                             volume={70},
+                                             number={6},
+                                             pages={877-891},
+                                             doi={10.1109/TC.2020.3048233}}
+                                       </div>
+                                    </div>
+                                 </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/cocoa.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%">
                                        <div class="title">
                                           <b>COCOA: Content-Oriented Configurable Architecture Based on Highly-Adaptive Data Transmission Networks</b>
                                        </div>
@@ -969,6 +1162,7 @@
                                              class="hoverZoomLink"></a>
                                     </td>
                                  </tr>
+                              </tbody>
                            </table>
                         </td>
                      </tr>
@@ -1158,7 +1352,7 @@
                      <tr>
                         <!-- <heading>Life</heading> -->
                         <td width="100%" valign="right">
-                           <b>Last Updated: Dec 28. 2023</b>
+                           <b>Last Updated: Feb 24, 2024</b>
                         </td>
                      </tr>
                   </tbody>
