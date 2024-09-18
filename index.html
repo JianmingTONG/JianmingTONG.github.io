@@ -141,6 +141,7 @@
                     <heading>News</heading>  
                     <div style="height:500px;overflow-y:auto">
                     <p></p><ul>      
+                    <li> [Sep. 2024] <b style="color:#82B366;">[Paper]</b> Our work <papertitle> <a href="https://ieeexplore.ieee.org/document/10672547"> Real-time Digital RF Emulation – II: A Near Memory Custom Accelerator </papertitle> is accepted to the IEEE Transactions on Radar Systems (<a href="https://ieee-aess.org/publication/ieee-transactions-radar-systems"><strong>TRadar'24</strong></a>).</li>
                     <li> [Aug. 2024] <b style="color:#FF2400;">[Award]</b> I was selected as the student for ACE Newsletter highlight by SRC!</li> 
                     <li> [Aug. 2024] <b style="color:#ff6600;">[Talk]</b> I give a talk on  <a href="https://arxiv.org/abs/2405.13170"><strong>FEATHER</strong></a> at <a href="https://www.src.org/liaison/"> SRC </a> Liaison Meeting of <a href="https://acecenter.grainger.illinois.edu/index.asp"> ACE </a>  Center!</a></li> 
                     <li> [Jul. 2024] <b style="color:#ff6600;">[Talk]</b> I give a talk on  <a href="https://arxiv.org/abs/2405.13170"><strong>FEATHER</strong></a> at NVidia (HQ) and NVidia (Westford)!</a></li> 
@@ -559,7 +560,7 @@
                               <tbody>
                                  <tr>
                                     <td width="30%">
-                                       <img src="./images/feather.png" width="95%" style="display: block;
+                                       <img src="./images/real_time_RF.png" width="95%" style="display: block;
                                        margin-left: auto; margin-left:
                                        auto;">
                                     </td>
@@ -593,7 +594,7 @@
                                        </div>
                                        <div class="link">
                                           <b><a onclick="displayid('abs13');">[abstract]</a></b>
-                                          <b><a href="https://ieeexplore.ieee.org/document/10672547">[paper]</a></b>
+                                          <b><a href="https://ieeexplore.ieee.org/document/10672547">[paper]</a></b> 
                                           <b><a onclick="displayid('bib13');">[bibtex]</a></b>
                                           <div id="abs13" style="display:none;">
                                              A near memory hardware accelerator, based on a novel direct path computational model, for real-time emulation of radio frequency systems is demonstrated. Our evaluation of hardware performance uses both application-specific integrated circuits (ASIC) and field programmable gate arrays (FPGA) methodologies: 1). The ASIC test-chip implementation, using TSMC 28nm CMOS, leverages distributed autonomous control to extract concurrency in compute as well as low latency. It achieves a 518 MHz per channel bandwidth in a prototype 4-node system. The maximum emulation range supported in this paradigm is 9.5 km with 0.24 μs of per-sample emulation latency. 2). The FPGA-based implementation, evaluated on a Xilinx ZCU104 board, demonstrates a 9-node test case (two Transmitters, one Receiver, and 6 passive reflectors) with an emulation range of 1.13 km to 27.3 km at 215 MHz bandwidth.
@@ -618,59 +619,6 @@
                         </td>
                      </tr>
 
-
-                     <tr>
-                        <td width="100%" valign="left">
-                           <table>
-                              <tbody>
-                                 <tr>
-                                    <td width="30%">
-                                       <img src="./images/snatch.png" width="95%" style="display: block;
-                                       margin-left: auto; margin-left:
-                                       auto;">
-                                    </td>
-                                    <td width="65%" valign="middle">
-                                       <div class="title">
-                                          <b>SNATCH: Stealing Neural Network Architecture from ML Accelerator in Intelligent Sensors</b>
-                                       </div>
-                                       <div class="authors">
-                                          <a href="https://www.sudarshan-sh.com/"> Sudarshan Sharma</a>,
-                                          <a href="https://udaykamal20.github.io/"> Uday Kamal</a>,
-                                          <b>Jianming Tong</b>,
-                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>,
-                                          and <a href="https://greenlab.ece.gatech.edu/members/professor/">Saibal Mukhopadhyay</a>.
-                                       </div>
-                                       <div class="venue">
-                                          <i>IEEE SENSORS conference(<b style="color:#ff6600;">SENSORS</b>), Aug 2023.</i>
-                                       </div>
-                                       <div class="link">
-                                          <b><a onclick="displayid('abs10');">[abstract]</a></b>
-                                          <!-- <b><a href="https://assets.researchsquare.com/files/rs-2910088/v1_covered_0e6c94bd-1499-4b2c-b414-902c232b490c.pdf?c=1683777877">[paper]</a></b> -->
-                                          <!-- <b><a href="https://github.com/TorchFHE/PAF-FHE">[code]</a></b> -->
-                                          <b><a href="https://epapers2.org/sensors2023/ESR/paper_details.php?paper_id=1451">[poster]</a></b>
-                                          <!-- <b><a onclick="displayid('bib8');">[bibtex]</a></b> -->
-                                          <div id="abs10" style="display:none;">
-                                             The use of Machine Learning (ML) models executing on ML Accelerators (MLA) in Intelligent sensors for feature extraction has garnered substantial interest. The Neural Network (NN) architecture implemented of MLA are intellectual property for the vendors. Along with improved power-efficiency and reduced bandwidth, the hardware based ML models embedded in the sensor also provides additional security against cyber-attacks on the ML. In this paper, we introduce an attack referred as SNATCH which uses a profiling-based side channel attack (SCA) that aims to steal the NN architecture executing on a digital MLA (Deep Learning Processing Unit (DPU) IP by Xilinx). We use electromagnetic side channel leakage from a clone device to create a profiler and then attack the victim's device to steal the NN architecture. Stealing the ML model undermines the intellectual property rights of the vendors of a sensor. Further, it also allows an adversary to mount critical Denial of Service and misuse attack. 
-                                          </div>
-                                          <!-- <div id="bib8" style="display:none;">
-                                             @misc {PPR:PPR658940,
-                                                Title = {PAF-FHE: Low-Cost Accurate Non-Polynomial Operator Polynomial Approximation in Fully Homomorphic Encryption Based ML Inference},
-                                                Author = {Dang, Jingtian and Tong, Jianming and Golder, Anupam and Raychowdhury, Arijit and Hao, Cong and Krishna, Tushar},
-                                                DOI = {10.21203/rs.3.rs-2910088/v1},
-                                                Abstract = {Machine learning (ML) is getting more pervasive. Wide adoption of ML in healthcare, facial recognition, and blockchain involves private and sensitive data. One of the most promising candidates for inference on encrypted data, termed Fully Homomorphic Encryp-tion (FHE), preserves the privacy of both data and the ML model. However, it slows down plaintext inference by six magnitudes, with a root cause of replacing non-polynomial operators with latency-prohibitive 27-degree Polynomial Approximated Function (PAF). While prior research has investigated low-degree PAFs, naive stochastic gradient descent (SGD) training fails to converge on PAFs with degrees higher than 5, leading to limited accuracy compared to the state-of-the-art 27-degree PAF. Therefore, we propose four training techniques to enable convergence in the post-approximation model using PAFs with an arbitrary degree, including (1) Dynamic Scaling (DS) and Static Scaling (SS) to enable minimal approximation error during approximation, (2) Coefficient Tuning (CT) to obtain a good initial coefficient value for each PAF, (3) Progressive Approximation (PA) to simply the two-variable regression optimization problem into single-variable for fast 1 and easy convergence, and (4) Alternate Training (AT) to retraining the post-replacement PAFs and other linear layers in a decoupled divide-and-conquer manner. A combination of DS/SS, CT, PA, and AT enables the exploration of accuracy-latency space for FHE-domain ReLU replacement. Leveraging the proposed techniques, we propose a systematic approach (PAF-FHE) to enable low-degree PAF to demonstrate the same accuracy as SotA high-degree PAFs. We evaluated PAFs with various degrees on different models and variant datasets, and PAF-FHE consistently enables low-degree PAF to achieve higher accuracy than SotA PAFs. Specifically, for ResNet-18 under the ImageNet-1k dataset, our spotted optimal 12-degree PAF reduces 56% latency compared to the SotA 27-degree PAF with the same post-replacement accuracy (69.4%). While as for VGG-19 under the CiFar-10 dataset, optimal 12-degree PAF achieves even 0.84% higher accuracy with 72% latency saving. Our code is open-sourced at: https://github.com/TorchFHE/PAF-FHE},
-                                                Publisher = {Research Square},
-                                                Year = {2023},
-                                                URL = {https://doi.org/10.21203/rs.3.rs-2910088/v1},
-                                             }
-                                          </div> -->
-                                       </div>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </td>
-                     </tr>
-                     
                      <tr>
                         <td width="100%" valign="left">
                            <table>
@@ -1341,6 +1289,7 @@
                </table>
                <br>
                <br>
+
                <!-- Experience -->
                <table width="100%" align="middle" border="0" cellspacing="0" cellpadding="10">
                   <tbody>
@@ -1460,6 +1409,7 @@
                      </tr>
                   </tbody>
                </table>
+
                <!-- Award -->
                <table width="100%" align="middle" border="0" cellspacing="0" cellpadding="10">
                   <tbody>
@@ -1511,6 +1461,7 @@
                   </tbody>
                </table>
                <br>
+
                <!-- Award -->
                <table width="100%" align="middle" border="0" cellspacing="0" cellpadding="10">
                   <tbody>
@@ -1541,6 +1492,7 @@
                   </tbody>
                </table>
                <br>
+
                <!-- Life -->
                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
                   <tbody>
@@ -1653,7 +1605,7 @@
                      <tr>
                         <!-- <heading>Life</heading> -->
                         <td width="100%" valign="right">
-                           <b>Last Updated: Jul 2, 2024</b>
+                           <b>Last Updated: Sep 17, 2024</b>
                         </td>
                      </tr>
                   </tbody>
