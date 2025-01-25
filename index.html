@@ -48,7 +48,7 @@
                            </p>
                            <p> Ph.D. at Georgia Tech starting from Spring 2021, Visitng Researcher at MIT, Student Researcher at Google </p>
                            <p> Advisor: <a href="https://tusharkrishna.ece.gatech.edu/"> Tushar Krishna </a></p>
-                           <p> Main Developer for <a href="https://github.com/JianmingTONG/FEATHER">FEATHER</a> , <a href="https://arxiv.org/abs/2306.17266">SUSHI</a></p>
+                           <p> Main Developer for  <a href="https://github.com/google/jaxite">CROSS</a>,  <a href="https://github.com/maeri-project/FEATHER">FEATHER</a>, <a href="https://arxiv.org/abs/2306.17266">SUSHI</a></p>
                            <p> My research is funded by <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2023-north-america"> Qualcomm Innovation Fellowship </a> and <a href="https://www.src.org/program/jump2/"> SRC Jump 2.0 </a>  </p>
                            <p> FPGA and FHE Lead in Synergy Lab @ Gatech</p>
                            <!-- <td width="46%" valign="left"> -->
@@ -141,6 +141,7 @@
                     <heading>News</heading>  
                     <div style="height:500px;overflow-y:auto">
                     <p></p><ul>      
+                    <li> [Jan. 2025] <b style="color:#82B366;">[Paper]</b> My paper <a href="https://arxiv.org/pdf/2501.07047"><strong>CROSS: Leveraging ASIC AI Chips for Homomorphic Encryption</strong></a> has online released now!</li>
                     <li> [Nov. 2024] <b style="color:#9673A6;">[Teaching]</b> I gave a guest lecture of <a href="https://arxiv.org/abs/2405.13170"><strong>FEATHER</strong></a> at the "Advanced Computer Architecture for Machine Learning" course hosted by Prof. <a href="https://www.tonytgeng.com/"><strong>Tony Geng</strong></a>.</li>
                     <li> [Nov. 2024] <b style="color:#ff6600;">[Talk]</b> I give a talk on  <a href="https://engineering.nyu.edu/events/2024/11/14/leveraging-tpu-homomorphic-encryption"><strong>Leveraging AI ASIC for Homomorphic Encryption</strong></a> at <a href="https://www.nyu.edu/"> NYU </a> hosted by <a href="https://brandonreagen.com/"><strong>Prof. Brandon Reagon</strong></a> and <a href="https://engineering.nyu.edu/student/karthik-garimella"><strong>Karthik Garimella</strong></a>!</li> 
                     <li> [Nov. 2024] <b style="color:#9673A6;">[Service]</b> I co-organized <strong>JOBS Workshop</strong> to help faciliating new grads for job hunting - go <a href="https://sites.google.com/cornell.edu/jobs-workshop-2024/home?authuser=0"><strong>JOBS</strong></a>! </a></li>
@@ -201,6 +202,66 @@
                      <heading>Leading Publications (* Equal Contribution)</heading>
                      <br>
                      <b> As Principal Contributor and Leading Author </b>
+                     <tr>
+                        <td width="100%" valign="left">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td width="30%">
+                                       <img src="./images/feather.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+                                    </td>
+                                    <td width="65%" valign="middle">
+                                       <div class="title">
+                                          <b>Leveraging ASIC AI Chips for Homomorphic Encryption</b>
+                                       </div>
+                                       <div class="authors">
+                                          <b>Jianming Tong</b>,
+                                          <a href="https://www.linkedin.com/in/tianhao-huang-tech/">Tianhao Huang</a>,
+                                          <a href="https://www.linkedin.com/in/leo-de-castro-962601190/">Leo De Castro</a>,
+                                          <a href="https://www.linkedin.com/in/anirudh-itagi">Anirudh Itagi</a>,
+                                          <a href="https://www.linkedin.com/in/jingtian-dang-568615207/">Jingtian Dang</a>,
+                                          <a href="https://scholar.google.com/citations?user=QLN76UUAAAAJ&hl=en">Anupam Golder</a>,
+                                          <a href="https://github.com/asraa">Asra Ali</a>,
+                                          <a href="https://www.linkedin.com/in/jevin-jiang/">Jevin Jiang</a>,
+                                          <a href="https://csg.csail.mit.edu/Users/arvind/">Arvind</a>,
+                                          <a href="https://tsg.ece.cornell.edu/people/g-edward-suh/">G. Edward Suh</a>,
+                                          <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
+                                       </div>
+                                       <div class="venue">
+                                          <i> International Symposium on Computer Architecture (<b style="color:#ff6600;">ISCA</b>), Jun 2024.</i>
+                                       </div>
+                                       <div class="link">
+                                          <b><a onclick="displayid('abs14');">[abstract]</a></b>
+                                          <b><a href="https://arxiv.org/abs/2501.07047">[paper]</a></b>
+                                          <b><a href="https://github.com/google/jaxite">[code]</a></b>
+                                          <!-- <b><a href="https://docs.google.com/presentation/d/1b_yGpuQd70Zo1Lj_AB6o9Y7BOjgpJ0oh8RGTD_7-yG4/edit?usp=sharing">[slide]</a></b> -->
+                                          <!-- <b><a href="https://youtu.be/FgTaYiEArrI">[isca_talk]</a></b> -->
+                                          <!-- <b><a href="https://youtu.be/FA6IMiRmQmw">[deep_dive_talk]</a></b> -->
+                                          <b><a onclick="displayid('bib14');">[bibtex]</a></b>
+                                          <div id="abs14" style="display:none;">
+                                             Cloud-based services are making the outsourcing of sensitive client data increasingly common. Although homomorphic encryption (HE) offers strong privacy guarantee, it requires substantially more resources than computing on plaintext, often leading to unacceptably large latencies in getting the results. HE accelerators have emerged to mitigate this latency issue, but with the high cost of ASICs.  In this paper we show that HE primitives can be converted to AI operators and accelerated on existing ASIC AI accelerators, like TPUs,  which are already widely deployed in the cloud. Adapting such accelerators for HE requires (1) supporting modular multiplication, (2) high-precision arithmetic in software, and (3) efficient mapping on matrix engines. We introduce the CROSS compiler (1) to adopt Barrett reduction to provide modular reduction support using multiplier and adder, (2)  Basis Aligned Transformation (BAT) to convert high-precision multiplication as low-precision matrix-vector multiplication, (3) Matrix Aligned Transformation (MAT) to covert vectorized modular operation with reduction into matrix multiplication that can be efficiently processed on 2D spatial matrix engine. Our evaluation of CROSS on a Google TPUv4 demonstrates significant performance improvements, with up to 161x and 5x speedup compared to the previous work on many-core CPUs and V100. The kernel-level codes are open-sourced at https://github.com/google/jaxite.git.
+                                          </div>
+                                          <div id="bib14" style="display:none;">
+                                             @misc{tong2025leveragingasicaichips,
+                                                title={Leveraging ASIC AI Chips for Homomorphic Encryption}, 
+                                                author={Jianming Tong and Tianhao Huang and Leo de Castro and Anirudh Itagi and Jingtian Dang and Anupam Golder and Asra Ali and Jevin Jiang and Arvind and G. Edward Suh and Tushar Krishna},
+                                                year={2025},
+                                                eprint={2501.07047},
+                                                archivePrefix={arXiv},
+                                                primaryClass={cs.CR},
+                                                url={https://arxiv.org/abs/2501.07047}, 
+                                          }
+                                          </div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+
                      <tr>
                         <td width="100%" valign="left">
                            <table>
