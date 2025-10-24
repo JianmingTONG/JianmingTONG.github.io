@@ -302,6 +302,123 @@
                         </td>
                      </tr>
 
+                    <tr>
+                      <td width="100%" valign="left">
+                         <table>
+                            <tbody>
+                               <tr>
+                                  <td width="30%">
+                                     <img src="./images/SquareLoopHASP25.png" width="95%" style="display: block;
+                                     margin-left: auto; margin-left:
+                                     auto;">
+                                  </td>
+                                  <td width="65%" valign="middle">
+                                     <div class="title">
+                                        <b>SquareLoop: Explore Optimal Authentication Block Strategy for ML</b>
+                                     </div>
+                                     <div class="authors">
+                                        <a href="https://www.linkedin.com/in/jan-strzeszynski/">Jan Strzeszynski*</a>
+                                        <b>Jianming Tong*</b>
+                                        <a href="https://scholar.google.com/citations?user=m6p0KooAAAAJ&hl=en">Kyungmi Lee*</a>
+                                        <a href="https://www.linkedin.com/in/nathanxiong/">Nathan Xiong</a>
+                                        <a href="https://www.parashar.org/">Angshuman Parashar</a>
+                                        <a href="https://people.csail.mit.edu/emer/">Joel S Emer</a>
+                                        <a href="https://scholar.google.com/citations?user=P__ztgcAAAAJ&hl=en">Tushar Krishna</a>
+                                        and <a href="https://people.csail.mit.edu/mengjia/">Mengjia Yan</a>
+                                     </div>
+                                     <div class="venue">
+                                      <i> Proceedings of the 14th International Workshop on Hardware and Architectural Support for Security and Privacy (<b style="color:#ff6600;">HASP</b>), Oct 2025.</i>
+                                     </div>
+                                     <div class="link">
+                                        <b><a onclick="displayid('abs15');">[abstract]</a></b>
+                                        <b><a href="https://dl.acm.org/doi/full/10.1145/3768725.3768732">[paper]</a></b> 
+                                        <b><a href="https://github.com/maeri-project/squareloop.">[code]</a></b> 
+                                        <b><a onclick="displayid('bib15');">[bibtex]</a></b>
+                                        <div id="abs15" style="display:none;">
+                                           Off-chip memory in ML accelerators is vulnerable to both hardware and software attack, which needs encryption and authentication. Precise performance modeling of it requires (1) representation of authentication blocks (AuthBlock) to cover the full design space of shapes and orientations, and (2) precise memory behavior modeling, as encryption and authentication mainly increase memory traffic. This paper introduces S2Loop, a framework that resolves these challenges by introducing (1) flexible, all-level partitioning based AuthBlocks for ensuring full coverage of the entire design space, (2) a realistic layout-based memory model, and (3) an Mapping-Layout-Authentication co-search algorithm to explore the drastic combinatorial design space to figure out optimal mapping, layout, and AuthBlock shape choice for multi-layer workloads. SquareLoop’s detailed memory model helps find better mapping to achieve 1.32 × speedup on ResNet18 compared to the SotA SecureLoop, and our latency predictions are validated to within 7.3% of an RTL implementation. S2Loop also achieve up-to 1.08 × /1.82 × overall speedup for authenticated ResNet18/MobileNet-V3 on various accelerators with AuthBlock and Mapping co-searching. We open-source S2Loop to provide a powerful and validated tool for designing efficient, secure accelerators at https://github.com/maeri-project/squareloop.
+                                        </div>
+                                        <div id="bib15" style="display:none;">
+                                          @inproceedings{10.1145/3768725.3768732,
+                                              author = {Strzeszynski, Jan and Tong, Jianming and Lee, Kyungmi and Xiong, Nathan and Parashar, Angshuman and Emer, Joel S. and Krishna, Tushar and Yan, Mengjia},
+                                              title = {SquareLoop: Explore Optimal Authentication Block Strategy for ML},
+                                              year = {2025},
+                                              isbn = {9798400721984},
+                                              publisher = {Association for Computing Machinery},
+                                              address = {New York, NY, USA},
+                                              url = {https://doi.org/10.1145/3768725.3768732},
+                                              doi = {10.1145/3768725.3768732},
+                                              abstract = {Off-chip memory in ML accelerators is vulnerable to both hardware and software attack, which needs encryption and authentication. Precise performance modeling of it requires (1) representation of authentication blocks (AuthBlock) to cover the full design space of shapes and orientations, and (2) precise memory behavior modeling, as encryption and authentication mainly increase memory traffic. This paper introduces S2Loop, a framework that resolves these challenges by introducing (1) flexible, all-level partitioning based AuthBlocks for ensuring full coverage of the entire design space, (2) a realistic layout-based memory model, and (3) an Mapping-Layout-Authentication co-search algorithm to explore the drastic combinatorial design space to figure out optimal mapping, layout, and AuthBlock shape choice for multi-layer workloads. SquareLoop’s detailed memory model helps find better mapping to achieve 1.32 \texttimes{} speedup on ResNet18 compared to the SotA SecureLoop, and our latency predictions are validated to within 7.3\% of an RTL implementation. S2Loop also achieve up-to 1.08 \texttimes{} /1.82 \texttimes{} overall speedup for authenticated ResNet18/MobileNet-V3 on various accelerators with AuthBlock and Mapping co-searching. We open-source S2Loop to provide a powerful and validated tool for designing efficient, secure accelerators at .},
+                                              booktitle = {Proceedings of the 14th International Workshop on Hardware and Architectural Support for Security and Privacy},
+                                              pages = {37–45},
+                                              numpages = {9},
+                                              keywords = {machine learning accelerator, performance modeling, memory encryption and authentication},
+                                              location = {
+                                              },
+                                              series = {HASP '25}
+                                          }
+                                        </div>
+                                     </div>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                      </td>
+                   </tr>
+
+                    <tr>
+                      <td width="100%" valign="left">
+                         <table>
+                            <tbody>
+                               <tr>
+                                  <td width="30%">
+                                     <img src="./images/ISPASS25_scalesim.png" width="95%" style="display: block;
+                                     margin-left: auto; margin-left:
+                                     auto;">
+                                  </td>
+                                  <td width="65%" valign="middle">
+                                     <div class="title">
+                                        <b>SCALE-Sim v3: A Modular Cycle-Accurate Systolic Accelerator Simulator for End-to-End System Analysis</b>
+                                     </div>
+                                     <div class="authors">
+                                      <a href="https://scholar.google.com/citations?user=I8kUcx4AAAAJ&hl=en">Ritik Raj</a>,
+                                      <a href="https://scholar.google.com/citations?user=bsF9XU4AAAAJ&hl=en">Sarbartha Banerjee*</a>,
+                                      <a href="http://zishenwan.github.io">Nikhil Srinivas*</a>,
+                                      <a href="https://zishenwan.github.io/">Zishen Wan*</a>,
+                                      <strong>Jianming Tong*</strong>,
+                                      <a href="https://anands09.github.io">Ananda Samajdar</a>,
+                                      <a href="https://scholar.google.com/citations?user=P__ztgcAAAAJ&hl=en">Tushar Krishna</a>
+                                     </div>
+                                     <div class="venue">
+                                      <i> IEEE International Symposium on Performance Analysis of Systems and Software (<b style="color:#ff6600;">ISPASS</b>), Sep 2025.</i>
+                                     </div>
+                                     <div class="link">
+                                        <b><a onclick="displayid('abs17');">[abstract]</a></b>
+                                          <b><a href="https://arxiv.org/abs/2504.15377">[paper]</a></b>
+                                        <b><a href="https://github.com/scalesim-project/scale-sim-v2">[code]</a></b> 
+                                        <b><a onclick="displayid('bib17');">[bibtex]</a></b>
+                                        <div id="abs17" style="display:none;">
+                                          We present SCALE-Sim v3, a modular cycle-accurate simulator for systolic-array-based architectures, featuring multi-core architecture with spatio-temporal partitioning, sparsity, DRAM ramulator, precise data layout modeling, and energy and power estimation via Accelergy.
+                                        </div>
+                                        <div id="bib17" style="display:none;">
+                                          @misc{raj2025scalesimv3modularcycleaccurate,
+                                                title={SCALE-Sim v3: A modular cycle-accurate systolic accelerator simulator for end-to-end system analysis}, 
+                                                author={Ritik Raj and Sarbartha Banerjee and Nikhil Chandra and Zishen Wan and Jianming Tong and Ananda Samajdar and Tushar Krishna},
+                                                year={2025},
+                                                eprint={2504.15377},
+                                                archivePrefix={arXiv},
+                                                primaryClass={cs.PF},
+                                                url={https://arxiv.org/abs/2504.15377}, 
+                                          }
+                                        </div>
+                                     </div>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                      </td>
+                   </tr>
+
+
                      <tr>
                         <td width="100%" valign="left">
                            <table>
@@ -355,6 +472,7 @@
                            </table>
                         </td>
                      </tr>
+
 
                      <tr>
                         <td width="100%" valign="left">
@@ -421,7 +539,6 @@
                         </td>
                      </tr>
 
-
                      <tr>
                         <td width="100%" valign="left">
                            <table>
@@ -486,173 +603,63 @@
                      </tr>
 
 
-<!-- 
-                     <tr>
-                        <td width="100%" valign="left">
-                           <table>
-                              <tbody>
-                                 <tr>
-                                    <td width="30%">
-                                       <img src="./images/acslam.png" width="95%" style="display: block;
-                                       margin-left: auto; margin-left:
-                                       auto;">
-                                    </td>
-                                    <td width="65%">
-                                       <div class="title">
-                                          <b>ac2SLAM: FPGA Accelerated High-Accuracy SLAM with Heapsort and Parallel Keypoint Extractor</b>
-                                       </div>
-                                       <div class="authors">
-                                          <a>Cheng Wang</a>,
-                                          <a>Yinkun Liu</a>,
-                                          <a>Kedai Zuo</a>,
-                                          <b>Jianming Tong</b>,
-                                          <a >Yan Ding</a>,
-                                          and <a href="http://gr.xjtu.edu.cn/web/pengjuren">Pengju Ren</a>.<br>
-                                       </div>
-                                       <div class="venue">
-                                          <i>International Conference on Field-Programmable Technology (<b style="color:#ff6600;">FPT</b>), 2021.</i> <b>Full Paper</b>
-                                       </div>
-                                       <div class="links">
-                                          <b><a onclick="displayid('abs4');">[abstract]</a></b>
-                                          <b><a href="https://ieeexplore.ieee.org/abstract/document/9609808">[paper]</a></b>
-                                          <b><a href="https://github.com/SLAM-Hardware/acSLAM">[code]</a></b>
-                                          <b><a onclick="displayid('bib4');">[bibtex]</a></b>
-                                          <div id="abs4" style="display:none;">
-                                             In order to fulfill the rich functions of the application layer, robust and accurate Simultaneous Localization and Mapping (SLAM) technique is very critical for robotics. However, due to the lack of sufficient computing power and storage capacity, it is challenging to delpoy high-accuracy SLAM in embedded devices efficiently. In this work, we propose a complete acceleration scheme, termed ac 2 SLAM, based on the ORB-SLAM2 algorithm including both front and back ends, and implement it on an FPGA platform. Specifically, the proposed ac 2 SLAM features with: 1) a scalable and parallel ORB extractor to extract sufficient keypoints and scores for throughput matching with 4% error, 2) a PingPong heapsort component (pp-heapsort) to select the significant keypoints, that could achieve single-cycle initiation interval to reduce the amount of data transfer between accelerator and the host CPU, and 3) the potential parallel acceleration strategies for the back-end optimization. Compared with running ORB-SLAM2 on the ARM processor, ac 2 SLAM achieves 2.1 × and 2.7 × faster in the TUM and KITTI datasets, while maintaining 10% error of SOTA eSLAM. In addition, the FPGA accelerated front-end achieves 4.55 × and 40 × faster than eSLAM and ARM. The ac 2 SLAM is fully open-sourced at https://github.com/SLAM-Hardware/acSLAM.
-                                          </div>
-                                          <div id="bib4" style="display:none;">
-                                             @INPROCEEDINGS{9609808,
-                                                author={Wang, Cheng and Liu, Yingkun and Zuo, Kedai and Tong, Jianming and Ding, Yan and Ren, Pengju},
-                                                booktitle={2021 International Conference on Field-Programmable Technology (ICFPT)}, 
-                                                title={ac2SLAM: FPGA Accelerated High-Accuracy SLAM with Heapsort and Parallel Keypoint Extractor}, 
-                                                year={2021},
-                                                volume={},
-                                                number={},
-                                                pages={1-9},
-                                                doi={10.1109/ICFPT52863.2021.9609808}}
-                                          </div>
-                                       </div>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </td>
-                     </tr> -->
-
-
-                     <tr>
-                        <td width="100%" valign="left">
-                           <table>
-                              <tbody>
-                                 <tr>
-                                    <td width="30%">
-                                       <img src="./images/icra.png" width="95%" style="display: block;
-                                       margin-left: auto; margin-left:
-                                       auto;">
-                                    </td>
-                                    <td width="65%">
-                                       <div class="title">
-                                          <b>SMMR-explore: Submap-based multi-robot exploration system with multi-robot multi-target potential field exploration method</b>
-                                       </div>
-                                       <div class="authors">
-                                          <a href="https://nicsefc.ee.tsinghua.edu.cn/people/yujinchengyu/">Jincheng Yu*</a>,
-                                          <b> Jianming Tong*</b>,
-                                          <a href="https://scholar.google.com/citations?user=gOuB4zQAAAAJ&hl=en">Yuanfan Xu</a>,
-                                          <a href="https://nicsefc.ee.tsinghua.edu.cn/people/zhilin-xu/">Zhilin Xu</a>,
-                                          <a href="http://nicsefc.ee.tsinghua.edu.cn/people/donghl17/">Haolin Dong</a>,
-                                          <a href="http://nicsefc.ee.tsinghua.edu.cn/people/tianxiang-yang/">Tianxiang Yang</a>, and
-                                          <a href="http://nicsefc.ee.tsinghua.edu.cn/people/yu-wang/">Yu Wang</a>.<br>
-                                       </div>
-                                       <div class="venue">
-                                          <i>IEEE International Conference on Robotics and Automation (<b style="color:#ff6600;">ICRA</b>), 2021.</i> <b>Oral</b>
-                                       </div>
-                                       <div class="links">
-                                          <b><a onclick="displayid('abs3');">[abstract]</a></b>
-                                          <b><a href="https://ieeexplore.ieee.org/document/9561328">[paper]</a></b>
-                                          <b><a href="https://github.com/efc-robot/SMMR-Explore">[code]</a></b>
-                                          <!-- <b><a href="https://www.youtube.com/watch?v=H1zwRIz8OYs">[demo]</a></b> -->
-                                          <b><a onclick="displayid('demo3');">[demo]</a></b>
-                                          <b><a onclick="displayid('bib3');">[bibtex]</a></b>
-                                          <div id="abs3" style="display:none;">
-                                             Collaborative exploration in an unknown environment without external positioning under limited communication is an essential task for multi-robot applications. For inter-robot positioning, various Distributed Simultaneous Localization and Mapping (DSLAM) systems share the Place Recognition (PR) descriptors and sensor data to estimate the relative pose between robots and merge robots’ maps. As maps are constantly shared among robots in exploration, we design a map-based DSLAM framework, which only shares the submaps, eliminating the transfer of PR descriptors and sensor data. Our framework saves 30% of total communication traffic. For exploration, each robot is assigned to get much unknown information about environments with paying little travel cost. As the number of sampled points increases, the goal would change back and forth among sampled frontiers, leading to the downgrade in exploration efficiency and the overlap of trajectories. We propose an exploration strategy based on Multi-robot Multi-target Potential Field (MMPF), which can eliminate goal’s back-and-forth changes, boosting the exploration efficiency by 1.03 ×∼1.62 × with 3 % ∼ 40 % travel cost saved. Our SubMap-based Multi-robot Exploration method (SMMR-Explore) is evaluated on both Gazebo simulator and real robots. The simulator and the exploration framework are published as an open-source ROS project at https://github.com/efc-robot/SMMR-Explore.
-                                          </div>
-                                          <div id="bib3" style="display:none;">
-                                             @INPROCEEDINGS{9561328,
-                                                author={Yu, Jincheng and Tong, Jianming and Xu, Yuanfan and Xu, Zhilin and Dong, Haolin and Yang, Tianxiang and Wang, Yu},
-                                                booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)}, 
-                                                title={SMMR-Explore: SubMap-based Multi-Robot Exploration System with Multi-robot Multi-target Potential Field Exploration Method}, 
-                                                year={2021},
-                                                volume={},
-                                                number={},
-                                                pages={8779-8785},
-                                                doi={10.1109/ICRA48506.2021.9561328}}
-                                          </div>
-                                          <div id="demo3" style="display:none;">
-                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/H1zwRIz8OYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                          </div>
-                                       </div>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                        </td>
-                     </tr>
-
-
-
-                    
                     <tr>
                       <td width="100%" valign="left">
-                         <table>
+                          <table>
                             <tbody>
-                               <tr>
+                                <tr>
                                   <td width="30%">
-                                     <img src="./images/ISPASS25_scalesim.png" width="95%" style="display: block;
-                                     margin-left: auto; margin-left:
-                                     auto;">
+                                      <img src="./images/icra.png" width="95%" style="display: block;
+                                      margin-left: auto; margin-left:
+                                      auto;">
                                   </td>
-                                  <td width="65%" valign="middle">
-                                     <div class="title">
-                                        <b>SCALE-Sim v3: A Modular Cycle-Accurate Systolic Accelerator Simulator for End-to-End System Analysis</b>
-                                     </div>
-                                     <div class="authors">
-                                      <a href="https://scholar.google.com/citations?user=I8kUcx4AAAAJ&hl=en">Ritik Raj</a>,
-                                      <a href="https://scholar.google.com/citations?user=bsF9XU4AAAAJ&hl=en">Sarbartha Banerjee*</a>,
-                                      <a href="http://zishenwan.github.io">Nikhil Srinivas*</a>,
-                                      <a href="https://zishenwan.github.io/">Zishen Wan*</a>,
-                                      <strong>Jianming Tong*</strong>,
-                                      <a href="https://anands09.github.io">Ananda Samajdar</a>,
-                                      <a href="https://scholar.google.com/citations?user=P__ztgcAAAAJ&hl=en">Tushar Krishna</a>
-                                     </div>
-                                     <div class="venue">
-                                      <i> IEEE International Symposium on Performance Analysis of Systems and Software (<b style="color:#ff6600;">ISPASS</b>), Sep 2025.</i>
-                                     </div>
-                                     <div class="link">
-                                        <b><a onclick="displayid('abs14');">[abstract]</a></b>
-                                        <b><a href="https://github.com/scalesim-project/scale-sim-v2">[code]</a></b> 
-                                        <!-- <b><a onclick="displayid('bib14');">[bibtex]</a></b> -->
-                                        <div id="abs14" style="display:none;">
-                                          We present SCALE-Sim v3, a modular cycle-accurate simulator for systolic-array-based architectures, featuring multi-core architecture with spatio-temporal partitioning, sparsity, DRAM ramulator, precise data layout modeling, and energy and power estimation via Accelergy.
+                                  <td width="65%">
+                                      <div class="title">
+                                        <b>SMMR-explore: Submap-based multi-robot exploration system with multi-robot multi-target potential field exploration method</b>
+                                      </div>
+                                      <div class="authors">
+                                        <a href="https://nicsefc.ee.tsinghua.edu.cn/people/yujinchengyu/">Jincheng Yu*</a>,
+                                        <b> Jianming Tong*</b>,
+                                        <a href="https://scholar.google.com/citations?user=gOuB4zQAAAAJ&hl=en">Yuanfan Xu</a>,
+                                        <a href="https://nicsefc.ee.tsinghua.edu.cn/people/zhilin-xu/">Zhilin Xu</a>,
+                                        <a href="http://nicsefc.ee.tsinghua.edu.cn/people/donghl17/">Haolin Dong</a>,
+                                        <a href="http://nicsefc.ee.tsinghua.edu.cn/people/tianxiang-yang/">Tianxiang Yang</a>, and
+                                        <a href="http://nicsefc.ee.tsinghua.edu.cn/people/yu-wang/">Yu Wang</a>.<br>
+                                      </div>
+                                      <div class="venue">
+                                        <i>IEEE International Conference on Robotics and Automation (<b style="color:#ff6600;">ICRA</b>), 2021.</i> <b>Oral</b>
+                                      </div>
+                                      <div class="links">
+                                        <b><a onclick="displayid('abs3');">[abstract]</a></b>
+                                        <b><a href="https://ieeexplore.ieee.org/document/9561328">[paper]</a></b>
+                                        <b><a href="https://github.com/efc-robot/SMMR-Explore">[code]</a></b>
+                                        <!-- <b><a href="https://www.youtube.com/watch?v=H1zwRIz8OYs">[demo]</a></b> -->
+                                        <b><a onclick="displayid('demo3');">[demo]</a></b>
+                                        <b><a onclick="displayid('bib3');">[bibtex]</a></b>
+                                        <div id="abs3" style="display:none;">
+                                            Collaborative exploration in an unknown environment without external positioning under limited communication is an essential task for multi-robot applications. For inter-robot positioning, various Distributed Simultaneous Localization and Mapping (DSLAM) systems share the Place Recognition (PR) descriptors and sensor data to estimate the relative pose between robots and merge robots’ maps. As maps are constantly shared among robots in exploration, we design a map-based DSLAM framework, which only shares the submaps, eliminating the transfer of PR descriptors and sensor data. Our framework saves 30% of total communication traffic. For exploration, each robot is assigned to get much unknown information about environments with paying little travel cost. As the number of sampled points increases, the goal would change back and forth among sampled frontiers, leading to the downgrade in exploration efficiency and the overlap of trajectories. We propose an exploration strategy based on Multi-robot Multi-target Potential Field (MMPF), which can eliminate goal’s back-and-forth changes, boosting the exploration efficiency by 1.03 ×∼1.62 × with 3 % ∼ 40 % travel cost saved. Our SubMap-based Multi-robot Exploration method (SMMR-Explore) is evaluated on both Gazebo simulator and real robots. The simulator and the exploration framework are published as an open-source ROS project at https://github.com/efc-robot/SMMR-Explore.
                                         </div>
-                                        <!-- <div id="bib14" style="display:none;">
-                                           @ARTICLE{10672547,
-                                              author={Mao, X. and Mukherjee, M. and Mizanur Rahman, N. and DeLude, C. and Driscoll, J. and Sharma, S. and Behnam, P. and Kamal, U. and Woo, J. and Kim, D. and Khan, S. and Tong, J. and Seo, J. and Sinha, P. and Swaminathan, M. and Krishna, T. and Pande, S. and Romberg, J. and Mukhopadhyay, S.},
-                                              journal={IEEE Transactions on Radar Systems}, 
-                                              title={Real-time Digital RF Emulation – II: A Near Memory Custom Accelerator}, 
-                                              year={2024},
+                                        <div id="bib3" style="display:none;">
+                                            @INPROCEEDINGS{9561328,
+                                              author={Yu, Jincheng and Tong, Jianming and Xu, Yuanfan and Xu, Zhilin and Dong, Haolin and Yang, Tianxiang and Wang, Yu},
+                                              booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)}, 
+                                              title={SMMR-Explore: SubMap-based Multi-Robot Exploration System with Multi-robot Multi-target Potential Field Exploration Method}, 
+                                              year={2021},
                                               volume={},
                                               number={},
-                                              pages={1-1},
-                                              keywords={Radio frequency;Computational modeling;Emulation;Computer architecture;Hardware;Real-time systems;Pulse modulation;hardware accelerators;near-memory;radio frequency emulator;real-time},
-                                              doi={10.1109/TRS.2024.3457523}}
-                                        </div> -->
-                                     </div>
+                                              pages={8779-8785},
+                                              doi={10.1109/ICRA48506.2021.9561328}}
+                                        </div>
+                                        <div id="demo3" style="display:none;">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/H1zwRIz8OYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                      </div>
                                   </td>
-                               </tr>
+                                </tr>
                             </tbody>
-                         </table>
+                          </table>
                       </td>
-                   </tr>
+                    </tr>
 
                     <tr>
                       <td width="100%" valign="left">
@@ -677,34 +684,33 @@
                                      </div>
                                      <div class="venue">
                                       <i> IEEE International Symposium on Performance Analysis of Systems and Software (<b style="color:#ff6600;">ISPASS</b>), Sep 2025.</i>
-                                     <!-- </div>
+                                     </div>
                                      <div class="link">
-                                        <b><a onclick="displayid('abs13');">[abstract]</a></b>
+                                        <b><a onclick="displayid('abs16');">[abstract]</a></b>
                                         <b><a href="https://ieeexplore.ieee.org/document/10672547">[paper]</a></b> 
-                                        <b><a onclick="displayid('bib13');">[bibtex]</a></b>
-                                        <div id="abs13" style="display:none;">
-                                           A near memory hardware accelerator, based on a novel direct path computational model, for real-time emulation of radio frequency systems is demonstrated. Our evaluation of hardware performance uses both application-specific integrated circuits (ASIC) and field programmable gate arrays (FPGA) methodologies: 1). The ASIC test-chip implementation, using TSMC 28nm CMOS, leverages distributed autonomous control to extract concurrency in compute as well as low latency. It achieves a 518 MHz per channel bandwidth in a prototype 4-node system. The maximum emulation range supported in this paradigm is 9.5 km with 0.24 μs of per-sample emulation latency. 2). The FPGA-based implementation, evaluated on a Xilinx ZCU104 board, demonstrates a 9-node test case (two Transmitters, one Receiver, and 6 passive reflectors) with an emulation range of 1.13 km to 27.3 km at 215 MHz bandwidth.
+                                        <b><a onclick="displayid('bib16');">[bibtex]</a></b>
+                                        <div id="abs16" style="display:none;">
+                                           Emerging machine learning (ML) workloads, such as those in AR/VR applications or drones, exhibit real-time multitask multi-model (RT-MTMM) characteristics. These workloads demand efficient executions of diverse combinations of multiple models within strict real-time constraints and tight energy budgets. Consequently, optimizing hardware accelerator design and dataflow choices for such ML models becomes imperative. Flexible dataflows in hardware have been explored to enhance performance and energy efficiency for diverse models. However, this flexibility involves substantial hardware costs, potentially outweighing the performance benefits. While coarse-grained flexible accelerators, including heterogeneous dataflow accelerators [1], have been proposed to mitigate such costs, they may prove suboptimal depending on combinations of models, potentially leading to under-performance of the hardware. Hence, this paper investigates the desired balance between the benefits and costs of flexibility. We present a systematic and quantitative exploration of medium-grained flexible accelerators, demonstrating that constrained yet judicious domain-aware flexibility choices in tile sizes (T), loop order (O), parallel dimensions (P), and array shape (S) can allow RT-MTMM accelerators to achieve comparable real-time performance (×1.06/×1.13) and energy efficiency (×1.09/×1.07) to fully flexible designs with significantly lower area overhead (×0.67×0.91) on edge/mobilescale accelerators.
                                         </div>
-                                        <div id="bib13" style="display:none;">
-                                           @ARTICLE{10672547,
-                                              author={Mao, X. and Mukherjee, M. and Mizanur Rahman, N. and DeLude, C. and Driscoll, J. and Sharma, S. and Behnam, P. and Kamal, U. and Woo, J. and Kim, D. and Khan, S. and Tong, J. and Seo, J. and Sinha, P. and Swaminathan, M. and Krishna, T. and Pande, S. and Romberg, J. and Mukhopadhyay, S.},
-                                              journal={IEEE Transactions on Radar Systems}, 
-                                              title={Real-time Digital RF Emulation – II: A Near Memory Custom Accelerator}, 
-                                              year={2024},
-                                              volume={},
-                                              number={},
-                                              pages={1-1},
-                                              keywords={Radio frequency;Computational modeling;Emulation;Computer architecture;Hardware;Real-time systems;Pulse modulation;hardware accelerators;near-memory;radio frequency emulator;real-time},
-                                              doi={10.1109/TRS.2024.3457523}}
+                                        <div id="bib16" style="display:none;">
+                                          @INPROCEEDINGS{11096375,
+                                            author={Seo, Jamin and Tong, Jianming and Krishna, Tushar and Kwon, Hyoukjun},
+                                            booktitle={2025 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)}, 
+                                            title={Exploring Constrained Dataflow Accelerators for Real-Time Multi-Task Multi-Model Ml Workloads}, 
+                                            year={2025},
+                                            volume={},
+                                            number={},
+                                            pages={1-11},
+                                            keywords={Costs;Systematics;Shape;Machine learning;Multitasking;Real-time systems;Energy efficiency;Software;Space exploration;Resource management;Multi-task multi-model machine learning;flexible dataflow;machine learning system},
+                                            doi={10.1109/ISPASS64960.2025.00014}}
                                         </div>
-                                     </div> -->
+                                     </div>
                                   </td>
                                </tr>
                             </tbody>
                          </table>
                       </td>
                    </tr>
-
 
                   </tbody>
                </table>
