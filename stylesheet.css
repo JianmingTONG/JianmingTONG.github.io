@@ -399,3 +399,27 @@ img {
   margin: 0;
   font-size: var(--font-size-xl);
 }
+
+/* Mission Section - Special Single Line Style */
+.mission-box {
+  background: linear-gradient(to right, #f0f9ff, #e0f2fe);
+  border-left: 5px solid var(--primary-color);
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.mission-label {
+  font-weight: 800;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
