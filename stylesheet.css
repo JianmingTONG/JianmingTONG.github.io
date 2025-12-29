@@ -423,3 +423,39 @@ img {
   letter-spacing: 0.05em;
   white-space: nowrap;
 }
+
+/* Expansion Box for Abstract/Bibtex/Demo */
+.publication-popup {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--secondary-color);
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+  color: var(--text-main);
+  /* Optional: Animation for smooth opening could go here if we used max-height transition */
+}
+
+/* Style Bibtex specifically to look like code */
+.publication-popup pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+/* If bibtex is just text inside the div not wrapped in pre */
+.publication-popup.bibtex {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85em;
+  white-space: pre-line;
+  background-color: #f7f7f7;
+  line-height: 1.2;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+}
