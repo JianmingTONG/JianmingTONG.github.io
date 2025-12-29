@@ -98,12 +98,17 @@ img {
   box-shadow: var(--shadow-md);
   flex-direction: column-reverse;
   /* Mobile-first: Text below image */
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .profile-section {
     flex-direction: row;
     text-align: left;
+  }
+
+  .profile-links {
+    justify-content: flex-start;
   }
 }
 
@@ -130,6 +135,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+  justify-content: center;
 }
 
 .profile-links a {
@@ -253,11 +259,16 @@ img {
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
   flex-direction: column;
+  /* Centering for mobile */
+  align-items: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .publication-item {
     flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
@@ -315,12 +326,15 @@ img {
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .profile-item {
     flex-direction: row;
     align-items: flex-start;
+    text-align: left;
   }
 }
 
@@ -414,6 +428,7 @@ img {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
+  flex-wrap: wrap;
 }
 
 .mission-label {
