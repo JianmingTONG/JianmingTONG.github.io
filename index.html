@@ -430,9 +430,9 @@
           <div class="authors">
             <b>Jianming Tong</b>,
             <a href="https://www.linkedin.com/in/tianhao-huang-tech/">Tianhao Huang</a>,
+            <a href="https://www.linkedin.com/in/jingtian-dang-568615207/">Jingtian Dang</a>,
             <a href="https://www.linkedin.com/in/leo-de-castro-962601190/">Leo De Castro</a>,
             <a href="https://www.linkedin.com/in/anirudh-itagi">Anirudh Itagi</a>,
-            <a href="https://www.linkedin.com/in/jingtian-dang-568615207/">Jingtian Dang</a>,
             <a href="https://scholar.google.com/citations?user=QLN76UUAAAAJ&hl=en">Anupam Golder</a>,
             <a href="https://github.com/asraa">Asra Ali</a>,
             <a href="https://www.linkedin.com/in/jevin-jiang/">Jevin Jiang</a>,
@@ -456,39 +456,51 @@
           <div class="profile-links">
             <a onclick="displayid('abs14');">abstract</a>
             <a href="https://arxiv.org/abs/2501.07047">paper</a>
-            <a href="https://drive.google.com/file/d/1eOhzb3PBCxfMX0WGCzqqD8dwMqHoRZgV/view?usp=sharing">poster</a>
-            <a href="https://github.com/google/jaxite">code</a>
+            <!-- <a href="https://drive.google.com/file/d/1eOhzb3PBCxfMX0WGCzqqD8dwMqHoRZgV/view?usp=sharing">poster</a> -->
+            <a href="https://github.com/EfficientPPML/CROSS">code</a>
             <a href="https://efficientppml.github.io/CROSS_Tutorial/">tutorial</a>
             <a onclick="displayid('bib14');">bibtex</a>
             <div id="abs14" class="publication-popup" style="display:none;">
-              Cloud-based services are making the outsourcing of sensitive client data increasingly common.
-              Although homomorphic encryption (HE) offers strong privacy guarantee, it requires substantially
-              more resources than computing on plaintext, often leading to unacceptably large latencies in
-              getting the results. HE accelerators have emerged to mitigate this latency issue, but with the
-              high cost of ASICs. In this paper we show that HE primitives can be converted to AI operators
-              and accelerated on existing ASIC AI accelerators, like TPUs, which are already widely deployed
-              in the cloud. Adapting such accelerators for HE requires (1) supporting modular multiplication,
-              (2) high-precision arithmetic in software, and (3) efficient mapping on matrix engines. We
-              introduce the CROSS compiler (1) to adopt Barrett reduction to provide modular reduction support
-              using multiplier and adder, (2) Basis Aligned Transformation (BAT) to convert high-precision
-              multiplication as low-precision matrix-vector multiplication, (3) Matrix Aligned Transformation
-              (MAT) to covert vectorized modular operation with reduction into matrix multiplication that can
-              be efficiently processed on 2D spatial matrix engine. Our evaluation of CROSS on a Google TPUv4
-              demonstrates significant performance improvements, with up to 161x and 5x speedup compared to
-              the previous work on many-core CPUs and V100. The kernel-level codes are open-sourced at
-              https://github.com/google/jaxite.git.
+              Homomorphic Encryption (HE) provides strong data privacy for cloud services but at the cost of prohibitive
+              computational overhead. While GPUs have emerged as a practical platform for accelerating HE, there remains
+              an order-of-magnitude energy-efficiency gap compared to specialized (but expensive) HE ASICs. This paper
+              explores an alternate direction: leveraging existing AI accelerators, like Google's TPUs with
+              coarse-grained compute and memory architectures, to offer a path toward ASIC-level energy efficiency for
+              HE.
+
+              However, this architectural paradigm creates a fundamental mismatch with SoTA HE algorithms designed for
+              GPUs. These algorithms rely heavily on: (1) high-precision (32-bit) integer arithmetic to now run on a
+              TPU's low-throughput vector unit, leaving its high-throughput low-precision (8-bit) matrix engine (MXU)
+              idle, and (2) fine-grained data permutations that are inefficient on the TPU's coarse-grained memory
+              subsystem. Consequently, porting GPU-optimized HE libraries to TPUs results in severe resource
+              under-utilization and performance degradation.
+
+              To tackle above challenges, we introduce CROSS, a compiler framework that systematically
+              transforms HE workloads to align with the TPU's architecture. CROSS makes two key contributions: (1)
+              Basis-Aligned Transformation (BAT), a novel technique that converts high-precision modular
+              arithmetic into dense, low-precision (INT8) matrix multiplications, unlocking and improving the
+              utilization of TPU's MXU for HE, and (2) Memory-Aligned Transformation (MAT), which eliminates
+              costly runtime data reordering by embedding reordering into compute kernels through offline parameter
+              transformation.
+
+              Our evaluation on a real single-host Google TPU v6e refreshes the SoTA Number Theoretic Transform (NTT)
+              throughput record with up-to 1.43x throughput improvement over WarpDrive on a NVIDIA A100.
+              Furthermore, CROSS achieves 451x, 7.81x, 1.83x, 1.31x, 1.86x, and
+              1.15x higher throughput per watt than OpenFHE, WarpDrive, FIDESlib, FAB, HEAP, and Cheddar,
+              respectively, establishing AI ASIC as the SotA efficient platform for HE operators. Code:
+              https://github.com/EfficientPPML/CROSS.
             </div>
             <div id="bib14" class="publication-popup bibtex" style="display:none;">
-              @misc{tong2025leveragingasicaichips,
-              title={Leveraging ASIC AI Chips for Homomorphic Encryption},
-              author={Jianming Tong and Tianhao Huang and Leo de Castro and Anirudh Itagi and Jingtian Dang
-              and Anupam Golder and Asra Ali and Jevin Jiang and Arvind and G. Edward Suh and Tushar Krishna},
-              year={2025},
-              eprint={2501.07047},
-              archivePrefix={arXiv},
-              primaryClass={cs.CR},
-              url={https://arxiv.org/abs/2501.07047},
-              }
+              @inproceedings{tong2025CROSS,
+              author = {Jianming Tong and Tianhao Huang and Jingtian Dang and Leo de Castro and Anirudh Itagi and Anupam
+              Golder and Asra Ali and Jevin Jiang and Jeremy Kun and Arvind and G. Edward Suh and Tushar Krishna},
+              title = {Leveraging ASIC AI Chips for Homomorphic Encryption},
+              year = {2026},
+              publisher = {2026 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
+              address = {Australia},
+              keywords = {AI ASICs, TPU, Fully Homomorphic Encryption},
+              location = {Australia},
+              series = {HPCA'26} }
             </div>
           </div>
         </div>
