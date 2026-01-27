@@ -643,6 +643,75 @@
 
       <div class="publication-item">
         <div class="pub-image">
+          <img src="./images/feather.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+        </div>
+        <div class="pub-content">
+          <div class="title">
+            <b>Privatar: Scalable Privacy-preserving Multi-user VR via Secure Offloading</b>
+          </div>
+          <div class="authors">
+            <b>Jianming Tong</b>,
+            <a href="https://hanshen-xiao.github.io/">Hanshen Xiao</a>,
+            <a href="https://www.linkedin.com/in/krishnakumarnair79">Krishna Kumar Nair</a>,
+            <a href="https://haokang-timmy.github.io/">Hao Kang</a>,
+            <a href="https://scholar.google.com/citations?user=TyABVB8AAAAJ&hl=en">Ashish Sirasao</a>,
+            <a href="https://ziqi-zhang.github.io/">Ziqi Zhang</a>,
+            <a href="https://tsg.ece.cornell.edu/people/g-edward-suh/">G. Edward Suh</a>,
+            <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
+          </div>
+          <div class="venue">
+            <i> Proceedings of Machine Learning and Systems (<b style="color:#ff6600;">MLSys</b>),
+              May
+              2026.</i>
+          </div>
+          <div class="profile-links">
+            <a onclick="displayid('abs18');">abstract</a>
+            <a href="https://drive.google.com/file/d/1sgR4u70jgFd__DK4uUFS9LYmneQRLajG/view?usp=sharing">paper</a>
+            <a href="https://github.com/maeri-project/FEATHER">code</a>
+            <a onclick="displayid('bib18');">bibtex</a>
+            <div id="abs18" class="publication-popup" style="display:none;">
+              Multi-user virtual reality (VR) applications such as football and concert experiences rely on real-time
+              avatar reconstruction to enable immersive interaction. However, rendering avatars for numerous
+              participants on each headset incurs prohibitive computational overhead, fundamentally limiting
+              scalability. This work introduces a framework, Privatar, to offload avatar reconstruction from headset to
+              untrusted devices within the same local network while safeguarding sensitive facial features against
+              adversaries capable of intercepting offloaded data.
+
+              Privatar builds on two insights. (1) System level. We observe identity-bearing information in facial
+              inputs is highly skewed across frequency, and propose Horizontal Partitioning (HP) to keep the most
+              identifying frequency components on-device and offloads only low-identifiability components. HP offloads
+              local computation while preserves privacy against expression identification attacks. (2) Privacy
+              accounting level. For individually offloaded, multi-dimensional signals without aggregation, worst-case
+              local Differential Privacy requires prohibitive noise, ruining utility. We observe users’ expression
+              statistical distribution are stable over time, and hence propose Distribution-Aware Minimal Perturbation
+              (DAMP). DAMP minimizes noise based on each user’s expression distribution to significantly reduce its
+              effects on utility and accuracy, retaining formal privacy guarantee.
+
+              On a Meta Quest Pro, Privatar supports up to 2.37× more concurrent users at 5.7~6.5% higher reconstruction
+              loss and ~9% energy overhead, providing a better Pareto frontier in Throughout-Loss over SotA
+              quantization, sparsity, and local reconstruction baseline. Privatar further provides both provable privacy
+              guarantee and stays robust against both empirical attack and NN-based Expression Identification Attack,
+              proving its resilience in practice. Our code is open-sourced at
+              https://github.com/georgia-tech-synergy-lab/Privatar.
+            </div>
+            <div id="bib18" class="publication-popup bibtex" style="display:none;">
+              @inproceedings{tong2026privatar,
+              author = {Tong, Jianming and Dang, Jingtian and Golder, Anupam and Raychowdhury, Arijit and Hao, Cong and
+              Krishna, Tushar},
+              booktitle = {Proceedings of Machine Learning and Systems},
+              title = {Privatar: Scalable Privacy-preserving Multi-user VR via Secure Offloading},
+              year = {2026}
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="publication-item">
+        <div class="pub-image">
           <img src="./images/SquareLoopHASP25.png" width="95%" style="display: block;
                                      margin-left: auto; margin-left:
                                      auto;">
@@ -885,15 +954,17 @@
               \url{https://github.com/EfficientFHE/SmartPAF}
             </div>
             <div id="bib12" class="publication-popup bibtex" style="display:none;">
-              @inproceedings{tong2024accurate,
-              author={Jianming Tong and Jingtian Dang and Anupam Golder and Callie Hao and Arijit
-              Raychowdhury
-              and Tushar Krishna},
-              booktitle = {Proceedings of Machine Learning and Systems (MLSys)},
-              title={Accurate Low-Degree Polynomial Approximation of Non-polynomial Operators for Fast
-              Private
-              Inference in Homomorphic Encryption},
-              url = {https://arxiv.org/abs/2404.03216},
+              @inproceedings{MLSYS2024_621d0fd4,
+              author = {Tong, Jianming and Dang, Jingtian and Golder, Anupam and Raychowdhury, Arijit and Hao, Cong and
+              Krishna, Tushar},
+              booktitle = {Proceedings of Machine Learning and Systems},
+              editor = {P. Gibbons and G. Pekhimenko and C. De Sa},
+              pages = {210--223},
+              title = {ACCURATE LOW-DEGREE POLYNOMIAL APPROXIMATION OF NON-POLYNOMIAL OPERATORS FOR FAST PRIVATE
+              INFERENCE IN HOMOMORPHIC ENCRYPTION},
+              url =
+              {https://proceedings.mlsys.org/paper_files/paper/2024/file/621d0fd41c720ab252e178b77c200d90-Paper-Conference.pdf},
+              volume = {6},
               year = {2024}
               }
             </div>
@@ -1073,15 +1144,13 @@
               in served accuracy. SUSHI can achieve up to 78.7% off-chip energy savings.
             </div>
             <div id="bib7" class="publication-popup bibtex" style="display:none;">
-              @misc{behnam2023subgraph,
-              title={Subgraph Stationary Hardware-Software Inference Co-Design},
-              author={Payman Behnam and Jianming Tong and Alind Khare and Yangyu Chen and Yue Pan and
+              @inproceedings{behnam2023subgraph,
+              author = {Payman Behnam and Jianming Tong and Alind Khare and Yangyu Chen and Yue Pan and
               Pranav
               Gadikar and Abhimanyu Rajeshkumar Bambhaniya and Tushar Krishna and Alexey Tumanov},
-              year={2023},
-              eprint={2306.17266},
-              archivePrefix={arXiv},
-              primaryClass={cs.DC}
+              booktitle = {Proceedings of Machine Learning and Systems},
+              title = {Subgraph Stationary Hardware-Software Inference Co-Design},
+              year = {2023}
               }
             </div>
           </div>
