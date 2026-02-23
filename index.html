@@ -103,6 +103,7 @@
         <li><b>Compilation: </b> Convert Crypto Algorithms to be Efficient on Commodity Hardware.
           <div class="profile-links" style="margin-top: 0.5rem;">
             <a href="https://arxiv.org/abs/2501.07047">CROSS-HPCA'26</a>
+            <a href="https://github.com/EfficientPPML/MORPH">MORPH-DAC'26</a>
           </div>
         </li>
         <li><b>Architecture (Hardware):</b> Reconfigurable Dataflow Accelerator for ML and Crypto.
@@ -128,6 +129,11 @@
       <h2 class="section-title">News</h2>
       <div class="news-container">
         <ul class="news-list">
+          <li> [Feb. 2026] <b style="color:#82B366;">[Paper]</b> Our work <a
+            href=""><strong>MORPH</strong>:
+            Enabling AI ASICs for Zero Knowledge Proof</a> is being accepted at
+          <a href="https://dac.com/2026"> DAC'26</a>! See u'all July 26~29 at Los Angeles!
+          </li>
           <li> [Feb. 2026] <b style="color:#ff6600;">[Talk]</b> I gave a talk on <a
             href="https://arxiv.org/abs/2501.07047"><strong>CROSS</strong>: Enable AI Accelerator for
             Homomorphic Encryption</a> at <a href="https://www.youtube.com/@MicrosoftResearch"> MSR Cryptography </a> hosted by <a href="https://www.microsoft.com/en-us/research/people/kilai/">Kim Laine</a>!
@@ -438,6 +444,59 @@
     <!-- Publications Section -->
     <section class="section">
       <h2 class="section-title">Leading Publications (* Equal Contribution)</h2>
+
+      <div class="publication-item">
+        <div class="pub-image">
+          <img src="./images/morph_overview.png" alt="MORPH Overview">
+        </div>
+        <div class="pub-content">
+          <div class="title">
+            <b>MORPH: Enabling AI ASICs for Zero Knowledge Proof</b>
+          </div>
+          <div class="authors">
+            <b>Jianming Tong*</b>,
+            <a href="https://www.linkedin.com/in/jingtian-dang-568615207/">Jingtian Dang*</a>,
+            <a href="https://scholar.google.com/citations?user=U0alxvwAAAAJ&hl=en">Simon Langowski</a>,
+            <a href="https://www.linkedin.com/in/tianhao-huang-tech/">Tianhao Huang</a>,
+            <a href="https://github.com/asraa">Asra Ali</a>,
+            <a href="https://www.jeremykun.com/">Jeremy Kun</a>,
+            <a href="https://people.csail.mit.edu/devadas/">Srini Devadas</a>,
+            <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
+          </div>
+          <div class="venue">
+            <i> Design Automation Conference (<b style="color:#ff6600;">DAC</b>), July 2026.</i>
+          </div>
+          <div>
+            <i><b style="color:#ff6600;">++MORPH is Deployed in Google TPU Cloud</b></i>
+          </div>
+          <div class="profile-links">
+            <a onclick="displayid('abs19');">abstract</a>
+            <!-- <a href="https://arxiv.org/abs/2501.07047">paper</a> -->
+            <!-- <a href="https://drive.google.com/file/d/1eOhzb3PBCxfMX0WGCzqqD8dwMqHoRZgV/view?usp=sharing">poster</a> -->
+            <!-- <a href="https://github.com/EfficientPPML/CROSS">code</a> -->
+            <!-- <a href="https://efficientppml.github.io/CROSS_Tutorial/">tutorial</a> -->
+            <!-- <a href="https://youtu.be/TFnQPlLZs1E">HPCA Talk</a> -->
+            <!-- <a href="https://docs.google.com/presentation/d/15WgTXtnLK3Lxjai3YHxKrbEG_WGTeQvcgBvzXs47-1s/edit?usp=sharing">slides</a> -->
+            <a onclick="displayid('bib19');">bibtex</a>
+            <div id="abs19" class="publication-popup" style="display:none;">
+              Zero-knowledge proof (ZKP) provers remain costly because multi-scalar multiplication (MSM) and number-theoretic transforms (NTTs) dominate runtime as they need significant computation. AI ASICs such as TPUs provide massive matrix throughput and SotA energy efficiency. 
+              We present MORPH, the first framework that reformulates ZKP kernels to match AI-ASIC execution. We introduce Big-T complexity, a hardware-aware complexity model that exposes heterogeneous bottlenecks and layout-transformation costs ignored by Big-$O$. Guided by this analysis, (1) at arithmetic level, MORPH develops an MXU-centric extended-RNS lazy reduction that converts high-precision modular arithmetic into dense low-precision GEMMs, eliminating all carry chains, and (2) at dataflow level, MORPH constructs a layout-stationary CPU–TPU Pippenger MSM and optimized 3/5-step NTT that avoid on-TPU shuffles and maintain full matrix-unit utilization.
+              Implemented in JAX/XLA, MORPH enables TPUv5p for better energy efficiency and comparable performance on MSM and NTT than SotA implementations on GPUs.
+            </div>
+            <div id="bib14" class="publication-popup bibtex" style="display:none;">
+              @inproceedings{tong2025CROSS,
+              author = {Jianming Tong and Jingtian Dang and Simon Langowski and Tianhao Huang and Asra Ali and Jeremy Kun and Srini Devadas and Tushar Krishna},
+              title = {MORPH: Enabling AI ASICs for Zero Knowledge Proof},
+              year = {2026},
+              publisher = {2026 Design Automation Conference (DAC)},
+              address = {Los Angeles},
+              keywords = {AI ASICs, TPU, Zero Knowledge Proof},
+              location = {Los Angeles},
+              series = {DAC'26} }
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="publication-item">
         <div class="pub-image">
