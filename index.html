@@ -109,6 +109,7 @@
         <li><b>Architecture (Hardware):</b> Reconfigurable Dataflow Accelerator for ML and Crypto.
           <div class="profile-links" style="margin-top: 0.5rem;">
             <a href="https://arxiv.org/abs/2405.13170">FEATHER-ISCA'24</a>
+            <a href="https://github.com/maeri-project/FEATHER">MINISA-ISPASS'26</a>
           </div>
         </li>
         <li><b>Performance Modeling:</b> Performance Analysis Tool for ML Accelerators.
@@ -132,7 +133,12 @@
           <li> [Feb. 2026] <b style="color:#82B366;">[Paper]</b> Our work <a
             href=""><strong>MORPH</strong>:
             Enabling AI ASICs for Zero Knowledge Proof</a> is being accepted at
-          <a href="https://dac.com/2026"> DAC'26</a>! See u'all July 26~29 at Los Angeles!
+            <a href="https://dac.com/2026"> DAC'26</a>! See u'all July 26~29 at Los Angeles!
+          </li>
+          <li> [Feb. 2026] <b style="color:#82B366;">[Paper]</b> Our work <a
+            href=""><strong>MINISA</strong>:
+            Minimal Instruction Set Architecture for Next-gen Reconfigurable Inference Accelerator</a> is being accepted at
+          <a href="https://ispass.org/ispass2026/"> ISPASS'26</a>! Virtually see u'all April 26-28 at Seoul, Korea!
           </li>
           <li> [Feb. 2026] <b style="color:#ff6600;">[Talk]</b> I gave a talk on <a
             href="https://arxiv.org/abs/2501.07047"><strong>CROSS</strong>: Enable AI Accelerator for
@@ -444,7 +450,6 @@
     <!-- Publications Section -->
     <section class="section">
       <h2 class="section-title">Leading Publications (* Equal Contribution)</h2>
-
       <div class="publication-item">
         <div class="pub-image">
           <img src="./images/morph_overview.png" alt="MORPH Overview">
@@ -474,7 +479,7 @@
             <!-- <a href="https://arxiv.org/abs/2501.07047">paper</a> -->
             <!-- <a href="https://drive.google.com/file/d/1eOhzb3PBCxfMX0WGCzqqD8dwMqHoRZgV/view?usp=sharing">poster</a> -->
             <!-- <a href="https://github.com/EfficientPPML/CROSS">code</a> -->
-            <!-- <a href="https://efficientppml.github.io/CROSS_Tutorial/">tutorial</a> -->
+            <a href="https://efficientppml.github.io/CROSS_Tutorial/">tutorial</a>
             <!-- <a href="https://youtu.be/TFnQPlLZs1E">HPCA Talk</a> -->
             <!-- <a href="https://docs.google.com/presentation/d/15WgTXtnLK3Lxjai3YHxKrbEG_WGTeQvcgBvzXs47-1s/edit?usp=sharing">slides</a> -->
             <a onclick="displayid('bib19');">bibtex</a>
@@ -504,7 +509,7 @@
         </div>
         <div class="pub-content">
           <div class="title">
-            <b>Leveraging ASIC AI Chips for Homomorphic Encryption</b>
+            <b>CROSS: Leveraging ASIC AI Chips for Homomorphic Encryption</b>
           </div>
           <div class="authors">
             <b>Jianming Tong</b>,
@@ -585,6 +590,51 @@
               keywords = {AI ASICs, TPU, Fully Homomorphic Encryption},
               location = {Australia},
               series = {HPCA'26} }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-item">
+        <div class="pub-image">
+          <img src="./images/minisa.png" width="95%" style="display: block;
+                                       margin-left: auto; margin-left:
+                                       auto;">
+        </div>
+        <div class="pub-content">
+          <div class="title">
+            <b>MINISA: Minimal Instruction Set Architecture for Next-gen Reconfigurable Inference Accelerator</b>
+          </div>
+          <div class="authors">
+            <b>Jianming Tong</b>,
+            <a href="">Yujie Li</a>,
+            <a href="https://devansh-dvj.github.io/">Devansh Jain</a>,
+            <a href="https://charithmendis.com/">Charith Mendis</a>,
+            <a href="https://tusharkrishna.ece.gatech.edu/">Tushar Krishna</a>
+          </div>
+          <div class="venue">
+            <i> IEEE International Symposium on Performance Analysis of Systems and Software (<b style="color:#ff6600;">ISPASS</b>),
+              Apr
+              2026.</i>
+          </div>
+          <div class="profile-links">
+            <a onclick="displayid('abs20');">abstract</a>
+            <a href="">paper</a>
+            <a href="https://github.com/maeri-project/FEATHER">code</a>
+            <a onclick="displayid('bib20');">bibtex</a>
+            <div id="abs20" class="publication-popup" style="display:none;">
+              Modern reconfigurable AI accelerators rely on rich mapping and data-layout control to sustain high utilization across matrix multiplication, convolution, and emerging non-AI domains. However, exposing this flexibility through fine-grained micro-control results in prohibitive control overhead of fetching configuration bits from off-chip memory. This paper presents MINISA, a minimal instruction set that programs a reconfigurable accelerator at the granularity of Virtual Neurons (VNs), the coarsest control granularity that retains flexibility of hardware and the finest granularity that avoids unnecessary control costs. We first introduce FEATHER+, a modest architectural refinement that eliminates redundant on-chip data replication required by mixed dataflow/layout execution, supporting dynamic inputs and weights. MINISA then abstracts control into three layout-setting instructions for input, weight, and output VNs and a single mapping instruction for setting dataflow. This reduces the control and instruction footprint while preserving the legal mapping and layout space supported by the FEATHER+. Our results show that 58 GEMM workloads spanning AI (GPT-oss), FHE, and ZKP, MINISA reduces geometric mean off-chip instruction traffic by factors ranging from 35x to (4.45 x 10^5)x under various sizes. This eliminates instruction-fetch stalls that consume 46%-98% of micro-instruction cycles, yielding up to 99.4x end-to-end speedup for 128x128 FEATHER+.
+            </div>
+            <div id="bib20" class="publication-popup bibtex" style="display:none;">
+              @inproceedings{tong2026MINISA,
+                author = {Tong, Jianming and Li, Yujie and Jain, Devansh and Mendis, Charith and Krishna, Tushar},
+                title = {MINISA: Minimal Instruction Set Architecture for Next-gen Reconfigurable Inference Accelerator},
+                year = {2026},
+                booktitle = {Proceedings of the 34th Annual International Symposium on Performance Analysis of Systems and Software},
+                keywords = {minimal instruction set architecture, reconfigurable accelerator, virtual neurons},
+                location = {Seoul, Korea},
+                series = {ISPASS '26}
+              }
             </div>
           </div>
         </div>
@@ -716,7 +766,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="publication-item">
         <div class="pub-image">
