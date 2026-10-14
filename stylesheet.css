@@ -130,6 +130,20 @@ img {
   display: block;
 }
 
+.academic-market {
+  margin-top: var(--spacing-md);
+  padding: 0.75rem var(--spacing-md);
+  background-color: #eff6ff;
+  border-left: 3px solid var(--primary-color);
+  border-radius: var(--radius-md);
+}
+
+.academic-market a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .profile-links {
   margin-top: var(--spacing-lg);
   display: flex;
